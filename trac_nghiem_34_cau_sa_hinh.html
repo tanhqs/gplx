@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trắc nghiệm 34 CÂU SA HÌNH GPLX (A, A1)</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f2f5;
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #1e466e;
+        border-bottom: 3px solid #ffc107;
+        display: inline-block;
+        width: auto;
+        margin: 0 auto 25px auto;
+        padding-bottom: 8px;
+    }
+    .title-wrapper {
+        text-align: center;
+    }
+    .question {
+        background: white;
+        padding: 20px 22px;
+        margin-bottom: 28px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: 0.2s;
+        border-left: 5px solid #ffc107;
+    }
+    .question img {
+        max-width: 100%;
+        display: block;
+        margin: 15px auto;
+        border-radius: 12px;
+        background: #f9f9f9;
+        padding: 5px;
+    }
+    label {
+        display: block;
+        margin: 12px 0 12px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        line-height: 1.4;
+    }
+    input[type="radio"] {
+        margin-right: 12px;
+        transform: scale(1.1);
+        vertical-align: middle;
+    }
+    button {
+        background: #1e466e;
+        color: white;
+        border: none;
+        padding: 8px 22px;
+        margin-top: 12px;
+        border-radius: 40px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: 0.2s;
+        font-weight: bold;
+    }
+    button:hover {
+        background: #ff8c00;
+        transform: scale(1.02);
+    }
+    .result {
+        margin-top: 12px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .correct {
+        color: #2a7f2a;
+        background: #e6f4e6;
+        padding: 6px 12px;
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .wrong {
+        color: #c0392b;
+        background: #fee9e7;
+        padding: 6px 12px;
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .filter-buttons {
+        text-align: center;
+        margin: 20px 0 30px;
+    }
+    .filter-buttons button {
+        margin: 0 10px;
+        background: #2c3e66;
+    }
+    .filter-buttons button:first-child {
+        background: #b83b2e;
+    }
+    .filter-buttons button:first-child:hover {
+        background: #a03226;
+    }
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 0.8rem;
+        color: #5a626e;
+    }
+    .hidden-question {
+        display: none;
+    }
+	.highlight-red {
+		color: #c62828;
+		font-weight: 600;
+	}
+
+</style>
+</head>
+<body>
+<div class="title-wrapper">
+<h1>📘 Trắc nghiệm<br>34 CÂU SA HÌNH GPLX (A, A1)</h1>
+<p><span class="highlight-red">Mục đích: Sau khi trả lời xong chọn "Chỉ xem câu làm sai" và lưu nhớ những câu trả lời sai</span></p>
+</div>
+
+<!-- =================== CÂU HỎI =================== -->
+<!-- Câu 216 -->
+<div class="question" data-answer="C">
+<p><b>Câu 216:</b> Theo hướng mũi tên, xe nào chấp hành đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image001.jpg" alt="Câu 216">
+<label><input type="radio" name="q216" value="A"> A. Xe khách, xe tải, xe mô tô.</label>
+<label><input type="radio" name="q216" value="B"> B. Xe tải, xe mô tô.</label>
+<label><input type="radio" name="q216" value="C"> C. Chỉ xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 217 -->
+<div class="question" data-answer="B">
+<p><b>Câu 217:</b> Theo hướng mũi tên, thứ tự các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image002.jpg" alt="Câu 217">
+<label><input type="radio" name="q217" value="A"> A. Xe tải, xe khách, xe con, xe mô tô.</label>
+<label><input type="radio" name="q217" value="B"> B. Xe tải, xe mô tô, xe khách, xe con.</label>
+<label><input type="radio" name="q217" value="C"> C. Xe khách, xe tải, xe con, xe mô tô.</label>
+<label><input type="radio" name="q217" value="D"> D. Xe mô tô, xe khách, xe tải, xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 218 -->
+<div class="question" data-answer="C">
+<p><b>Câu 218:</b> Theo hướng mũi tên, thứ tự các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image003.jpg" alt="Câu 218">
+<label><input type="radio" name="q218" value="A"> A. Xe tải, xe con, xe mô tô.</label>
+<label><input type="radio" name="q218" value="B"> B. Xe con, xe tải, xe mô tô.</label>
+<label><input type="radio" name="q218" value="C"> C. Xe mô tô, xe con, xe tải.</label>
+<label><input type="radio" name="q218" value="D"> D. Xe con, xe mô tô, xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 219 -->
+<div class="question" data-answer="B">
+<p><b>Câu 219:</b> Trường hợp này xe nào được quyền đi trước?</p>
+<img src="34_cau_sa_hinh_files/image004.jpg" alt="Câu 219">
+<label><input type="radio" name="q219" value="A"> A. Xe mô tô.</label>
+<label><input type="radio" name="q219" value="B"> B. Xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 220 -->
+<div class="question" data-answer="B">
+<p><b>Câu 220:</b> Xe nào được quyền đi trước trong trường hợp này?</p>
+<img src="34_cau_sa_hinh_files/image005.jpg" alt="Câu 220">
+<label><input type="radio" name="q220" value="A"> A. Xe mô tô.</label>
+<label><input type="radio" name="q220" value="B"> B. Xe cứu thương đi làm nhiệm vụ cấp cứu.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 221 -->
+<div class="question" data-answer="A">
+<p><b>Câu 221:</b> Theo tín hiệu đèn, xe nào được phép đi?</p>
+<img src="34_cau_sa_hinh_files/image006.jpg" alt="Câu 221">
+<label><input type="radio" name="q221" value="A"> A. Xe con và xe khách.</label>
+<label><input type="radio" name="q221" value="B"> B. Xe mô tô.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 222 -->
+<div class="question" data-answer="B">
+<p><b>Câu 222:</b> Theo tín hiệu đèn, xe nào đi là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image007.jpg" alt="Câu 222">
+<label><input type="radio" name="q222" value="A"> A. Xe khách, xe mô tô.</label>
+<label><input type="radio" name="q222" value="B"> B. Xe con, xe tải.</label>
+<label><input type="radio" name="q222" value="C"> C. Xe tải, xe mô tô.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 223 -->
+<div class="question" data-answer="A">
+<p><b>Câu 223:</b> Các xe đi theo hướng mũi tên, những xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image008.jpg" alt="Câu 223">
+<label><input type="radio" name="q223" value="A"> A. Xe khách, xe tải, xe mô tô.</label>
+<label><input type="radio" name="q223" value="B"> B. Xe tải, xe con, xe mô tô.</label>
+<label><input type="radio" name="q223" value="C"> C. Xe khách, xe con, xe mô tô.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 224 -->
+<div class="question" data-answer="C">
+<p><b>Câu 224:</b> Theo hướng mũi tên, thứ tự các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image009.jpg" alt="Câu 224">
+<label><input type="radio" name="q224" value="A"> A. Xe khách, xe tải, xe mô tô, xe con.</label>
+<label><input type="radio" name="q224" value="B"> B. Xe con, xe khách, xe tải, xe mô tô.</label>
+<label><input type="radio" name="q224" value="C"> C. Xe mô tô, xe tải, xe khách, xe con.</label>
+<label><input type="radio" name="q224" value="D"> D. Xe mô tô, xe tải, xe con, xe khách.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 225 -->
+<div class="question" data-answer="A">
+<p><b>Câu 225:</b> Trong trường hợp này xe nào đỗ vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image010.jpg" alt="Câu 225">
+<label><input type="radio" name="q225" value="A"> A. Xe tải.</label>
+<label><input type="radio" name="q225" value="B"> B. Xe con và mô tô.</label>
+<label><input type="radio" name="q225" value="C"> C. Cả ba xe.</label>
+<label><input type="radio" name="q225" value="D"> D. Xe con và xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 226 -->
+<div class="question" data-answer="A">
+<p><b>Câu 226:</b> Theo hướng mũi tên, những hướng nào xe gắn máy được phép đi?</p>
+<img src="34_cau_sa_hinh_files/image011.jpg" alt="Câu 226">
+<label><input type="radio" name="q226" value="A"> A. Cả ba hướng.</label>
+<label><input type="radio" name="q226" value="B"> B. Chỉ hướng 1 và 3.</label>
+<label><input type="radio" name="q226" value="C"> C. Chỉ hướng 1.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 227 -->
+<div class="question" data-answer="A">
+<p><b>Câu 227:</b> Xe nào đỗ vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image012.jpg" alt="Câu 227">
+<label><input type="radio" name="q227" value="A"> A. Cả hai xe.</label>
+<label><input type="radio" name="q227" value="B"> B. Không xe nào vi phạm.</label>
+<label><input type="radio" name="q227" value="C"> C. Chỉ xe mô tô vi phạm.</label>
+<label><input type="radio" name="q227" value="D"> D. Chỉ xe tải vi phạm.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 228 -->
+<div class="question" data-answer="C">
+<p><b>Câu 228:</b> Xe nào đỗ vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image013.jpg" alt="Câu 228">
+<label><input type="radio" name="q228" value="A"> A. Chỉ xe mô tô.</label>
+<label><input type="radio" name="q228" value="B"> B. Chỉ xe tải.</label>
+<label><input type="radio" name="q228" value="C"> C. Cả ba xe.</label>
+<label><input type="radio" name="q228" value="D"> D. Chỉ xe mô tô và xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 230 -->
+<div class="question" data-answer="D">
+<p><b>Câu 230:</b> Theo hướng mũi tên, thứ tự các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image014.jpg" alt="Câu 230">
+<label><input type="radio" name="q230" value="A"> A. Xe con (A), xe mô tô, xe con (B), xe đạp.</label>
+<label><input type="radio" name="q230" value="B"> B. Xe con (B), xe đạp, xe mô tô, xe con (A).</label>
+<label><input type="radio" name="q230" value="C"> C. Xe con (A), xe con (B), xe mô tô + xe đạp.</label>
+<label><input type="radio" name="q230" value="D"> D. Xe mô tô + xe đạp, xe con (A), xe con (B).</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 231 -->
+<div class="question" data-answer="A">
+<p><b>Câu 231:</b> Xe nào được quyền đi trước trong trường hợp này?</p>
+<img src="34_cau_sa_hinh_files/image015.jpg" alt="Câu 231">
+<label><input type="radio" name="q231" value="A"> A. Xe mô tô.</label>
+<label><input type="radio" name="q231" value="B"> B. Xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 232 -->
+<div class="question" data-answer="C">
+<p><b>Câu 232:</b> Xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image016.jpg" alt="Câu 232">
+<label><input type="radio" name="q232" value="A"> A. Xe khách.</label>
+<label><input type="radio" name="q232" value="B"> B. Xe mô tô.</label>
+<label><input type="radio" name="q232" value="C"> C. Xe con.</label>
+<label><input type="radio" name="q232" value="D"> D. Xe con và xe mô tô.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 233 -->
+<div class="question" data-answer="C">
+<p><b>Câu 233:</b> Các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image017.jpg" alt="Câu 233">
+<label><input type="radio" name="q233" value="A"> A. Các xe ở phía tay phải và tay trái của người điều khiển được phép đi thẳng.</label>
+<label><input type="radio" name="q233" value="B"> B. Cho phép các xe ở mọi hướng được phép rẽ phải.</label>
+<label><input type="radio" name="q233" value="C"> C. Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 234 -->
+<div class="question" data-answer="C">
+<p><b>Câu 234:</b> Theo hướng mũi tên, xe nào được phép đi?</p>
+<img src="34_cau_sa_hinh_files/image018.jpg" alt="Câu 234">
+<label><input type="radio" name="q234" value="A"> A. Xe mô tô, xe con.</label>
+<label><input type="radio" name="q234" value="B"> B. Xe con, xe tải.</label>
+<label><input type="radio" name="q234" value="C"> C. Xe mô tô, xe tải.</label>
+<label><input type="radio" name="q234" value="D"> D. Cả ba xe.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 235 -->
+<div class="question" data-answer="B">
+<p><b>Câu 235:</b> Trong hình dưới đây, xe nào chấp hành đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image019.jpg" alt="Câu 235">
+<label><input type="radio" name="q235" value="A"> A. Chỉ xe khách, xe mô tô.</label>
+<label><input type="radio" name="q235" value="B"> B. Tất cả các loại xe trên.</label>
+<label><input type="radio" name="q235" value="C"> C. Không xe nào chấp hành đúng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 236 -->
+<div class="question" data-answer="C">
+<p><b>Câu 236:</b> Theo hướng mũi tên, những hướng nào xe mô tô được phép đi?</p>
+<img src="34_cau_sa_hinh_files/image020.jpg" alt="Câu 236">
+<label><input type="radio" name="q236" value="A"> A. Cả ba hướng.</label>
+<label><input type="radio" name="q236" value="B"> B. Hướng 1 và 2.</label>
+<label><input type="radio" name="q236" value="C"> C. Hướng 1 và 3.</label>
+<label><input type="radio" name="q236" value="D"> D. Hướng 2 và 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 237 -->
+<div class="question" data-answer="B">
+<p><b>Câu 237:</b> Trong trường hợp này, thứ tự xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image021.jpg" alt="Câu 237">
+<label><input type="radio" name="q237" value="A"> A. Xe công an đi làm nhiệm vụ khẩn cấp, xe quân sự đi làm nhiệm vụ khẩn cấp, xe con + xe mô tô.</label>
+<label><input type="radio" name="q237" value="B"> B. Xe quân sự đi làm nhiệm vụ khẩn cấp, xe công an đi làm nhiệm vụ khẩn cấp, xe con + xe mô tô.</label>
+<label><input type="radio" name="q237" value="C"> C. Xe mô tô + xe con, xe quân sự đi làm nhiệm vụ khẩn cấp, xe công an đi làm nhiệm vụ khẩn cấp.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 238 -->
+<div class="question" data-answer="A">
+<p><b>Câu 238:</b> Trong hình dưới, những xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image022.jpg" alt="Câu 238">
+<label><input type="radio" name="q238" value="A"> A. Xe con (E), xe mô tô (C).</label>
+<label><input type="radio" name="q238" value="B"> B. Xe tải (A), xe mô tô (D).</label>
+<label><input type="radio" name="q238" value="C"> C. Xe khách (B), xe mô tô (C).</label>
+<label><input type="radio" name="q238" value="D"> D. Xe khách (B), xe mô tô (D).</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 239 -->
+<div class="question" data-answer="C">
+<p><b>Câu 239:</b> Trong hình dưới, những xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image023.jpg" alt="Câu 239">
+<label><input type="radio" name="q239" value="A"> A. Xe con (B), xe mô tô (C).</label>
+<label><input type="radio" name="q239" value="B"> B. Xe con (A), xe mô tô (C).</label>
+<label><input type="radio" name="q239" value="C"> C. Xe con (E), xe mô tô (D).</label>
+<label><input type="radio" name="q239" value="D"> D. Tất cả các loại xe trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 240 -->
+<div class="question" data-answer="C">
+<p><b>Câu 240:</b> Theo tín hiệu đèn, xe nào phải dừng lại là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image024.jpg" alt="Câu 240">
+<label><input type="radio" name="q240" value="A"> A. Xe khách, xe mô tô.</label>
+<label><input type="radio" name="q240" value="B"> B. Xe tải, xe mô tô.</label>
+<label><input type="radio" name="q240" value="C"> C. Xe con, xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 241 -->
+<div class="question" data-answer="B">
+<p><b>Câu 241:</b> Bạn có được phép vượt xe mô tô phía trước không?</p>
+<img src="34_cau_sa_hinh_files/image025.jpg" alt="Câu 241">
+<label><input type="radio" name="q241" value="A"> A. Cho phép.</label>
+<label><input type="radio" name="q241" value="B"> B. Không được vượt.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 242 -->
+<div class="question" data-answer="D">
+<p><b>Câu 242:</b> Theo tín hiệu đèn của xe cơ giới, xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image026.jpg" alt="Câu 242">
+<label><input type="radio" name="q242" value="A"> A. Xe mô tô.</label>
+<label><input type="radio" name="q242" value="B"> B. Xe ô tô con.</label>
+<label><input type="radio" name="q242" value="C"> C. Không xe nào vi phạm.</label>
+<label><input type="radio" name="q242" value="D"> D. Cả hai xe.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 243 -->
+<div class="question" data-answer="B">
+<p><b>Câu 243:</b> Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image027.jpg" alt="Câu 243">
+<label><input type="radio" name="q243" value="A"> A. Xe con.</label>
+<label><input type="radio" name="q243" value="B"> B. Xe tải.</label>
+<label><input type="radio" name="q243" value="C"> C. Xe con, xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 244 -->
+<div class="question" data-answer="C">
+<p><b>Câu 244:</b> Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image028.jpg" alt="Câu 244">
+<label><input type="radio" name="q244" value="A"> A. Xe tải, xe con.</label>
+<label><input type="radio" name="q244" value="B"> B. Xe khách, xe con.</label>
+<label><input type="radio" name="q244" value="C"> C. Xe khách, xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 245 -->
+<div class="question" data-answer="B">
+<p><b>Câu 245:</b> Các xe đi theo hướng mũi tên, xe nào chấp hành đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image029.jpg" alt="Câu 245">
+<label><input type="radio" name="q245" value="A"> A. Xe tải, xe mô tô.</label>
+<label><input type="radio" name="q245" value="B"> B. Xe khách, xe mô tô.</label>
+<label><input type="radio" name="q245" value="C"> C. Xe tải, xe con.</label>
+<label><input type="radio" name="q245" value="D"> D. Xe mô tô, xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 246 -->
+<div class="question" data-answer="C">
+<p><b>Câu 246:</b> Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?</p>
+<img src="34_cau_sa_hinh_files/image030.jpg" alt="Câu 246">
+<label><input type="radio" name="q246" value="A"> A. Xe của bạn, xe mô tô, xe con.</label>
+<label><input type="radio" name="q246" value="B"> B. Xe con, xe của bạn, xe mô tô.</label>
+<label><input type="radio" name="q246" value="C"> C. Xe mô tô, xe con, xe của bạn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 247 -->
+<div class="question" data-answer="B">
+<p><b>Câu 247:</b> Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?</p>
+<img src="34_cau_sa_hinh_files/image031.jpg" alt="Câu 247">
+<label><input type="radio" name="q247" value="A"> A. Xe của bạn, xe mô tô, xe con.</label>
+<label><input type="radio" name="q247" value="B"> B. Xe con, xe của bạn, xe mô tô.</label>
+<label><input type="radio" name="q247" value="C"> C. Xe mô tô, xe con, xe của bạn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 248 -->
+<div class="question" data-answer="C">
+<p><b>Câu 248:</b> Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?</p>
+<img src="34_cau_sa_hinh_files/image032.jpg" alt="Câu 248">
+<label><input type="radio" name="q248" value="A"> A. Xe của bạn, xe mô tô, xe đạp.</label>
+<label><input type="radio" name="q248" value="B"> B. Xe mô tô, xe đạp, xe của bạn.</label>
+<label><input type="radio" name="q248" value="C"> C. Xe đạp, xe mô tô, xe của bạn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 249 -->
+<div class="question" data-answer="A">
+<p><b>Câu 249:</b> Xe nào dừng đúng theo quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image033.jpg" alt="Câu 249">
+<label><input type="radio" name="q249" value="A"> A. Xe con.</label>
+<label><input type="radio" name="q249" value="B"> B. Xe mô tô.</label>
+<label><input type="radio" name="q249" value="C"> C. Cả 2 xe đều đúng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 250 -->
+<div class="question" data-answer="B">
+<p><b>Câu 250:</b> Trong tình huống dưới đây, xe đầu kéo kéo rơ moóc (xe container) đang rẽ phải, xe con màu xanh và xe máy phía sau xe container đi như thế nào để bảo đảm an toàn?</p>
+<img src="34_cau_sa_hinh_files/image034.jpg" alt="Câu 250">
+<label><input type="radio" name="q250" value="A"> A. Vượt về phía bên phải để đi tiếp.</label>
+<label><input type="radio" name="q250" value="B"> B. Giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi.</label>
+<label><input type="radio" name="q250" value="C"> C. Vượt về phía bên trái để đi tiếp.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<div class="filter-buttons">
+    <button id="showWrongBtn">📌 Chỉ xem câu làm sai</button>
+    <button id="showAllBtn">🔄 Hiện lại tất cả câu</button>
+</div>
+
+<script>
+function checkAnswer(button) {
+    const questionDiv = button.parentElement;
+    const selectedRadio = questionDiv.querySelector('input[type="radio"]:checked');
+    const resultPara = questionDiv.querySelector('.result');
+    if (!selectedRadio) {
+        resultPara.innerHTML = '<span class="wrong">⚠️ Vui lòng chọn đáp án.</span>';
+        questionDiv.setAttribute('data-has-answered', 'true');
+        questionDiv.setAttribute('data-is-correct', 'false');
+        return;
+    }
+    const userAnswer = selectedRadio.value;
+    const correctAnswer = questionDiv.getAttribute('data-answer');
+    if (userAnswer === correctAnswer) {
+        resultPara.innerHTML = '<span class="correct">✅ Chính xác!</span>';
+        questionDiv.setAttribute('data-is-correct', 'true');
+    } else {
+        resultPara.innerHTML = `<span class="wrong">❌ Sai. Đáp án đúng: ${correctAnswer}.</span>`;
+        questionDiv.setAttribute('data-is-correct', 'false');
+    }
+    questionDiv.setAttribute('data-has-answered', 'true');
+}
+
+function showWrongQuestions() {
+    const allQuestions = document.querySelectorAll('.question');
+    let anyWrong = false;
+    allQuestions.forEach(q => {
+        const hasAnswered = q.getAttribute('data-has-answered') === 'true';
+        const isCorrect = q.getAttribute('data-is-correct') === 'true';
+        if (hasAnswered && !isCorrect) {
+            q.classList.remove('hidden-question');
+            anyWrong = true;
+        } else {
+            q.classList.add('hidden-question');
+        }
+    });
+    if (!anyWrong) {
+        alert('Chưa có câu trả lời sai nào! Hãy làm thử vài câu trước.');
+        showAllQuestions();
+    }
+}
+
+function showAllQuestions() {
+    const allQuestions = document.querySelectorAll('.question');
+    allQuestions.forEach(q => {
+        q.classList.remove('hidden-question');
+    });
+}
+
+document.getElementById('showWrongBtn').addEventListener('click', showWrongQuestions);
+document.getElementById('showAllBtn').addEventListener('click', showAllQuestions);
+</script>
+<footer>📌 34 CÂU SA HÌNH GPLX (A, A1) | Chúc Ôn tập hiệu quả</footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ôn Thi GPLX (A, A1) 250 câu</title>
+<style>
+body { font-family: Arial, sans-serif; padding:20px; }
+a { display:block; padding:6px; text-decoration:none; color:#0066cc; }
+a:hover { background:#eef; }
+a.visited {
+    background: #d4edda;
+    color: #155724;
+    font-weight: bold;
+    border-left: 5px solid green;
+}
+</style>
+</head>
+<body>
+<h2>Ôn Thi GPLX (A, A1) 250 câu</h2>
+<h4>Tel: 0965.366.247</h4>
+<button onclick="resetVisited()">🔄 Reset đánh dấu</button><br><br>
+
+<h2>Bước 1: TÀI LIỆU & ĐÁP ÁN</h2>
+(Mục đích: Câu hỏi và đáp án)<br><br>
+<a href="125_cau_ly_thuyet.htm" target="_blank">125 Câu lý thuyết</a>
+<a href="90_cau_bien_bao.htm" target="_blank">90 Câu biển báo</a>
+<a href="34_cau_sa_hinh.htm" target="_blank">34 Câu sa hình</a>
+<hr>
+
+<h2>Bước 2: TRẮC NGHIỆM</h2>
+(Mục đích: Xem thuộc không => nhớ thêm câu làm sai)<br><br>
+<a href="trac_nghiem_125_cau_ly_thuyet.html" target="_blank">Trắc nghiệm 125 câu lý thuyết</a>
+<a href="trac_nghiem_90_cau_bien_bao.html" target="_blank">Trắc nghiệm 90 câu biển báo</a>
+<a href="trac_nghiem_34_cau_sa_hinh.html" target="_blank">Trắc nghiệm 34 câu sa hình</a>
+<hr>
+
+<h2>Bước 3: Trắc nghiệm Ramdom 25 câu</h2>
+(Mục đích: Làm tổng thể vì câu hiện ra random)<br><br>
+
+<a href="trac_nghiem_GPLX_random.htm" target="_blank">Trắc nghiệm GPLX random</a>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("a");
+
+    // Load trạng thái đã click
+    const visited = JSON.parse(localStorage.getItem("visitedLinks")) || [];
+
+    links.forEach(link => {
+        const href = link.getAttribute("href");
+
+        // Nếu link đã từng click → đánh dấu
+        if (visited.includes(href)) {
+            link.classList.add("visited");
+        }
+
+        // Khi click link
+        link.addEventListener("click", function () {
+            if (!visited.includes(href)) {
+                visited.push(href);
+                localStorage.setItem("visitedLinks", JSON.stringify(visited));
+            }
+            link.classList.add("visited");
+        });
+    });
+});
+</script>
+
+<script>
+function resetVisited() {
+    localStorage.removeItem("visitedLinks");
+    location.reload();
+}
+</script>
+
+</body>
+</html>

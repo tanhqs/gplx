@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trắc nghiệm 90 CÂU BIỂN BÁO GIAO THÔNG GPLX (A, A1)</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f2f5;
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #1e466e;
+        border-bottom: 3px solid #ffc107;
+        display: inline-block;
+        width: auto;
+        margin: 0 auto 25px auto;
+        padding-bottom: 8px;
+    }
+    .title-wrapper {
+        text-align: center;
+    }
+    .question {
+        background: white;
+        padding: 20px 22px;
+        margin-bottom: 28px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: 0.2s;
+        border-left: 5px solid #ffc107;
+    }
+    .question img {
+        max-width: 100%;
+        display: block;
+        margin: 15px auto;
+        border-radius: 12px;
+        background: #f9f9f9;
+        padding: 5px;
+    }
+    label {
+        display: block;
+        margin: 12px 0 12px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        line-height: 1.4;
+    }
+    input[type="radio"] {
+        margin-right: 12px;
+        transform: scale(1.1);
+        vertical-align: middle;
+    }
+    button {
+        background: #1e466e;
+        color: white;
+        border: none;
+        padding: 8px 22px;
+        margin-top: 12px;
+        border-radius: 40px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: 0.2s;
+        font-weight: bold;
+    }
+    button:hover {
+        background: #ff8c00;
+        transform: scale(1.02);
+    }
+    .result {
+        margin-top: 12px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .correct {
+        color: #2a7f2a;
+        background: #e6f4e6;
+        padding: 6px 12px;
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .wrong {
+        color: #c0392b;
+        background: #fee9e7;
+        padding: 6px 12px;
+        border-radius: 30px;
+        display: inline-block;
+    }
+    hr {
+        margin: 8px 0;
+    }
+    .question p {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin: 0 0 12px 0;
+        color: #0b3b5f;
+    }
+    .filter-buttons {
+        text-align: center;
+        margin: 20px 0 30px;
+    }
+    .filter-buttons button {
+        margin: 0 10px;
+        background: #2c3e66;
+    }
+    .filter-buttons button:first-child {
+        background: #b83b2e;
+    }
+    .filter-buttons button:first-child:hover {
+        background: #a03226;
+    }
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 0.8rem;
+        color: #5a626e;
+    }
+    .hidden-question {
+        display: none;
+    }
+	.highlight-red {
+		color: #c62828;
+		font-weight: 600;
+	}
+
+</style>
+</head>
+<body>
+<div class="title-wrapper">
+<h1>📘 Trắc nghiệm<br>90 CÂU BIỂN BÁO GIAO THÔNG GPLX (A, A1)</h1>
+<p><span class="highlight-red">Mục đích: Sau khi trả lời xong chọn "Chỉ xem câu làm sai" và lưu nhớ những câu trả lời sai</span></p>
+</div>
+
+<!-- Sử dụng cấu trúc dựa trên file gốc, đáp án lấy từ màu đỏ (#ED0000) trong tài liệu -->
+<!-- Câu 126 -->
+<div class="question" data-answer="B">
+<p><b>Câu 126:</b> Biển nào cấm máy kéo?</p>
+<img src="90_cau_bien_bao_files/image001.jpg" alt="Câu 126">
+<label><input type="radio" name="q126" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q126" value="B"> B. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q126" value="C"> C. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q126" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 127 -->
+<div class="question" data-answer="A">
+<p><b>Câu 127:</b> Biển nào báo hiệu cấm xe mô tô ba bánh chở hàng đi qua?</p>
+<img src="90_cau_bien_bao_files/image002.jpg" alt="Câu 127">
+<label><input type="radio" name="q127" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q127" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q127" value="C"> C. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 128 -->
+<div class="question" data-answer="C">
+<p><b>Câu 128:</b> Biển nào dưới đây xe gắn máy được phép đi vào?</p>
+<img src="90_cau_bien_bao_files/image003.jpg" alt="Câu 128">
+<label><input type="radio" name="q128" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q128" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q128" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 129 -->
+<div class="question" data-answer="A">
+<p><b>Câu 129:</b> Biển nào báo hiệu cấm xe mô tô đi vào?</p>
+<img src="90_cau_bien_bao_files/image004.jpg" alt="Câu 129">
+<label><input type="radio" name="q129" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q129" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q129" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 130 -->
+<div class="question" data-answer="C">
+<p><b>Câu 130:</b> Khi gặp biển nào thì xe mô tô hai bánh được đi vào?</p>
+<img src="90_cau_bien_bao_files/image005.jpg" alt="Câu 130">
+<label><input type="radio" name="q130" value="A"> A. Không biển nào.</label>
+<label><input type="radio" name="q130" value="B"> B. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q130" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q130" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 131 -->
+<div class="question" data-answer="B">
+<p><b>Câu 131:</b> Biển nào cấm quay đầu xe?</p>
+<img src="90_cau_bien_bao_files/image006.jpg" alt="Câu 131">
+<label><input type="radio" name="q131" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q131" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q131" value="C"> C. Không biển nào.</label>
+<label><input type="radio" name="q131" value="D"> D. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 132 -->
+<div class="question" data-answer="A">
+<p><b>Câu 132:</b> Biển nào cấm xe rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image007.jpg" alt="Câu 132">
+<label><input type="radio" name="q132" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q132" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q132" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 133 -->
+<div class="question" data-answer="B">
+<p><b>Câu 133:</b> Khi gặp biển nào xe được rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image008.jpg" alt="Câu 133">
+<label><input type="radio" name="q133" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q133" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q133" value="C"> C. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 134 -->
+<div class="question" data-answer="A">
+<p><b>Câu 134:</b> Biển nào cấm các phương tiện rẽ phải?</p>
+<img src="90_cau_bien_bao_files/image009.jpg" alt="Câu 134">
+<label><input type="radio" name="q134" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q134" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q134" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q134" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 135 -->
+<div class="question" data-answer="A">
+<p><b>Câu 135:</b> Biển nào cấm các phương tiện rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image010.jpg" alt="Câu 135">
+<label><input type="radio" name="q135" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q135" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q135" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q135" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 136 -->
+<div class="question" data-answer="B">
+<p><b>Câu 136:</b> Biển nào xe được phép rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image011.jpg" alt="Câu 136">
+<label><input type="radio" name="q136" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q136" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q136" value="C"> C. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 137 -->
+<div class="question" data-answer="C">
+<p><b>Câu 137:</b> Biển nào xe quay đầu không bị cấm?</p>
+<img src="90_cau_bien_bao_files/image012.jpg" alt="Câu 137">
+<label><input type="radio" name="q137" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q137" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q137" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 138 -->
+<div class="question" data-answer="A">
+<p><b>Câu 138:</b> Biển nào xe được phép quay đầu nhưng không được rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image013.jpg" alt="Câu 138">
+<label><input type="radio" name="q138" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q138" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q138" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 139 -->
+<div class="question" data-answer="B">
+<p><b>Câu 139:</b> Biển nào là biển "Cấm đi ngược chiều"?</p>
+<img src="90_cau_bien_bao_files/image014.jpg" alt="Câu 139">
+<label><input type="radio" name="q139" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q139" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q139" value="C"> C. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 140 -->
+<div class="question" data-answer="C">
+<p><b>Câu 140:</b> Biển nào dưới đây các phương tiện không được phép đi vào?</p>
+<img src="90_cau_bien_bao_files/image015.jpg" alt="Câu 140">
+<label><input type="radio" name="q140" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q140" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q140" value="C"> C. Biển 1 và biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 141 -->
+<div class="question" data-answer="B">
+<p><b>Câu 141:</b> Khi gặp biển nào xe ưu tiên theo luật định vẫn phải dừng lại?</p>
+<img src="90_cau_bien_bao_files/image016.jpg" alt="Câu 141">
+<label><input type="radio" name="q141" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q141" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q141" value="C"> C. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 142 -->
+<div class="question" data-answer="A">
+<p><b>Câu 142:</b> Biển nào cấm tất cả các loại xe cơ giới và thô sơ, trừ xe ưu tiên?</p>
+<img src="90_cau_bien_bao_files/image017.jpg" alt="Câu 142">
+<label><input type="radio" name="q142" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q142" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q142" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 143 -->
+<div class="question" data-answer="A">
+<p><b>Câu 143:</b> Biển báo này có ý nghĩa như thế nào?</p>
+<img src="90_cau_bien_bao_files/image018.jpg" alt="Câu 143">
+<label><input type="radio" name="q143" value="A"> A. Tốc độ tối đa cho phép về ban đêm là 70 km/h.</label>
+<label><input type="radio" name="q143" value="B"> B. Tốc độ tối thiểu cho phép về ban đêm là 70 km/h.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 144 -->
+<div class="question" data-answer="A">
+<p><b>Câu 144:</b> Biển này có hiệu lực với xe mô tô hai bánh, ba bánh chở hàng không?</p>
+<img src="90_cau_bien_bao_files/image019.jpg" alt="Câu 144">
+<label><input type="radio" name="q144" value="A"> A. Có.</label>
+<label><input type="radio" name="q144" value="B"> B. Không.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 145 -->
+<div class="question" data-answer="B">
+<p><b>Câu 145:</b> Biển này có ý nghĩa như thế nào?</p>
+<img src="90_cau_bien_bao_files/image020.jpg" alt="Câu 145">
+<label><input type="radio" name="q145" value="A"> A. Cấm xe cơ giới (trừ xe ưu tiên) đi thẳng.</label>
+<label><input type="radio" name="q145" value="B"> B. Cấm các loại xe cơ giới và xe mô tô (trừ xe ưu tiên) đi về bên trái và bên phải.</label>
+<label><input type="radio" name="q145" value="C"> C. Hướng trái và phải không cấm xe cơ giới.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 146 -->
+<div class="question" data-answer="B">
+<p><b>Câu 146:</b> Biển phụ đặt dưới biển cấm bóp còi có ý nghĩa gì?</p>
+<img src="90_cau_bien_bao_files/image021.jpg" alt="Câu 146">
+<label><input type="radio" name="q146" value="A"> A. Khoảng cách đến nơi cấm bóp còi.</label>
+<label><input type="radio" name="q146" value="B"> B. Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển.</label>
+<label><input type="radio" name="q146" value="C"> C. Cấm dùng còi có độ vang xa 500m.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 147 -->
+<div class="question" data-answer="B">
+<p><b>Câu 147:</b> Đoạn đường 500m từ nơi đặt biển này, người lái xe có được phép bấm còi không?</p>
+<img src="90_cau_bien_bao_files/image021.jpg" alt="Câu 147">
+<label><input type="radio" name="q147" value="A"> A. Được phép.</label>
+<label><input type="radio" name="q147" value="B"> B. Không được phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 148 -->
+<div class="question" data-answer="B">
+<p><b>Câu 148:</b> Biển nào xe mô tô hai bánh được đi vào?</p>
+<img src="90_cau_bien_bao_files/image022.jpg" alt="Câu 148">
+<label><input type="radio" name="q148" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q148" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q148" value="C"> C. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 149 -->
+<div class="question" data-answer="B">
+<p><b>Câu 149:</b> Biển nào xe mô tô hai bánh không được đi vào?</p>
+<img src="90_cau_bien_bao_files/image023.jpg" alt="Câu 149">
+<label><input type="radio" name="q149" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q149" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q149" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 150 -->
+<div class="question" data-answer="A">
+<p><b>Câu 150:</b> Ba biển này có hiệu lực như thế nào?</p>
+<img src="90_cau_bien_bao_files/image024.jpg" alt="Câu 150">
+<label><input type="radio" name="q150" value="A"> A. Cấm các loại xe ở biển phụ đi vào.</label>
+<label><input type="radio" name="q150" value="B"> B. Cấm các loại xe cơ giới đi vào trừ loại xe ở biển phụ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 151 -->
+<div class="question" data-answer="B">
+<p><b>Câu 151:</b> Biển này có ý nghĩa như thế nào?</p>
+<img src="90_cau_bien_bao_files/image025.jpg" alt="Câu 151">
+<label><input type="radio" name="q151" value="A"> A. Cấm dừng xe về hướng bên trái.</label>
+<label><input type="radio" name="q151" value="B"> B. Cấm dừng và đỗ xe theo hướng bên phải.</label>
+<label><input type="radio" name="q151" value="C"> C. Được phép đỗ xe và dừng xe theo hướng bên phải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 152 -->
+<div class="question" data-answer="A">
+<p><b>Câu 152:</b> Biển "Tốc độ tối đa cho phép về ban đêm"?</p>
+<img src="90_cau_bien_bao_files/image026.jpg" alt="Câu 152">
+<label><input type="radio" name="q152" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q152" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q152" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 153 -->
+<div class="question" data-answer="B">
+<p><b>Câu 153:</b> Biển báo hiệu tốc độ không vượt quá trị số ghi trên biển?</p>
+<img src="90_cau_bien_bao_files/image027.jpg" alt="Câu 153">
+<label><input type="radio" name="q153" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q153" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 154 -->
+<div class="question" data-answer="A">
+<p><b>Câu 154:</b> Số 50 ghi trên biển có ý nghĩa gì?</p>
+<img src="90_cau_bien_bao_files/image029.jpg" alt="Câu 154">
+<label><input type="radio" name="q154" value="A"> A. Tốc độ tối đa cho phép.</label>
+<label><input type="radio" name="q154" value="B"> B. Tốc độ tối thiểu cho phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 155 -->
+<div class="question" data-answer="A">
+<p><b>Câu 155:</b> Gặp biển nào người lái xe phải nhường đường cho người đi bộ?</p>
+<img src="90_cau_bien_bao_files/image031.jpg" alt="Câu 155">
+<label><input type="radio" name="q155" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q155" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q155" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 157 -->
+<div class="question" data-answer="C">
+<p><b>Câu 157:</b> Biển chỉ đường dành cho người đi bộ, các loại xe không được đi vào?</p>
+<img src="90_cau_bien_bao_files/image031.jpg" alt="Câu 157">
+<label><input type="radio" name="q157" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q157" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q157" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q157" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 158 -->
+<div class="question" data-answer="A">
+<p><b>Câu 158:</b> Biển "Đường dành cho xe thô sơ"?</p>
+<img src="90_cau_bien_bao_files/image032.jpg" alt="Câu 158">
+<label><input type="radio" name="q158" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q158" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q158" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 159 -->
+<div class="question" data-answer="D">
+<p><b>Câu 159:</b> Biển báo sắp đến chỗ giao nhau nguy hiểm?</p>
+<img src="90_cau_bien_bao_files/image033.jpg" alt="Câu 159">
+<label><input type="radio" name="q159" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q159" value="B"> B. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q159" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q159" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 160 -->
+<div class="question" data-answer="A">
+<p><b>Câu 160:</b> Biển "Giao nhau với đường sắt có rào chắn"?</p>
+<img src="90_cau_bien_bao_files/image033.jpg" alt="Câu 160">
+<label><input type="radio" name="q160" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q160" value="B"> B. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q160" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 161 -->
+<div class="question" data-answer="C">
+<p><b>Câu 161:</b> Biển "Giao nhau có tín hiệu đèn"?</p>
+<img src="90_cau_bien_bao_files/image034.jpg" alt="Câu 161">
+<label><input type="radio" name="q161" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q161" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q161" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q161" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 162 -->
+<div class="question" data-answer="B">
+<p><b>Câu 162:</b> Biển báo nguy hiểm giao nhau với đường sắt?</p>
+<img src="90_cau_bien_bao_files/image035.jpg" alt="Câu 162">
+<label><input type="radio" name="q162" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q162" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q162" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q162" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 163 -->
+<div class="question" data-answer="C">
+<p><b>Câu 163:</b> Biển đường bộ giao nhau với đường sắt không có rào chắn?</p>
+<img src="90_cau_bien_bao_files/image036.jpg" alt="Câu 163">
+<label><input type="radio" name="q163" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q163" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q163" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q163" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 164 -->
+<div class="question" data-answer="A">
+<p><b>Câu 164:</b> Biển sắp đến chỗ giao nhau giữa đường bộ và đường sắt?</p>
+<img src="90_cau_bien_bao_files/image037.jpg" alt="Câu 164">
+<label><input type="radio" name="q164" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q164" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q164" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q164" value="D"> D. Biển 1 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 165 -->
+<div class="question" data-answer="B">
+<p><b>Câu 165:</b> Biển "Cửa chui"?</p>
+<img src="90_cau_bien_bao_files/image038.jpg" alt="Câu 165">
+<label><input type="radio" name="q165" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q165" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q165" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 166 (hai biển image039) -->
+<div class="question" data-answer="A">
+<p><b>Câu 166:</b> Hai biển này có ý nghĩa như thế nào?</p>
+<img src="90_cau_bien_bao_files/image039.jpg" alt="Câu 166">
+<label><input type="radio" name="q166" value="A"> A. Để chỉ nơi đường sắt giao vuông góc với đường bộ không có rào chắn.</label>
+<label><input type="radio" name="q166" value="B"> B. Để báo trước sắp đến vị trí giao cắt không vuông góc, không có rào chắn.</label>
+<label><input type="radio" name="q166" value="C"> C. Nơi đường sắt giao nhau với đường bộ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 167 -->
+<div class="question" data-answer="C">
+<p><b>Câu 167:</b> Biển "Hết đoạn đường ưu tiên"?</p>
+<img src="90_cau_bien_bao_files/image040.jpg" alt="Câu 167">
+<label><input type="radio" name="q167" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q167" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q167" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 168 -->
+<div class="question" data-answer="B">
+<p><b>Câu 168:</b> Biển báo hiệu xe được ưu tiên qua nơi giao nhau?</p>
+<img src="90_cau_bien_bao_files/image041.jpg" alt="Câu 168">
+<label><input type="radio" name="q168" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q168" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q168" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q168" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 169 -->
+<div class="question" data-answer="A">
+<p><b>Câu 169:</b> Biển "Giao nhau với đường không ưu tiên"?</p>
+<img src="90_cau_bien_bao_files/image042.jpg" alt="Câu 169">
+<label><input type="radio" name="q169" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q169" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q169" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q169" value="D"> D. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 170 -->
+<div class="question" data-answer="C">
+<p><b>Câu 170:</b> Biển "Giao nhau với đường ưu tiên"?</p>
+<img src="90_cau_bien_bao_files/image043.jpg" alt="Câu 170">
+<label><input type="radio" name="q170" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q170" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q170" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q170" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 171 -->
+<div class="question" data-answer="A">
+<p><b>Câu 171:</b> Biển "Đường giao nhau" cùng cấp?</p>
+<img src="90_cau_bien_bao_files/image044.jpg" alt="Câu 171">
+<label><input type="radio" name="q171" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q171" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q171" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 172 -->
+<div class="question" data-answer="A">
+<p><b>Câu 172:</b> Biển "Đường hai chiều"?</p>
+<img src="90_cau_bien_bao_files/image045.jpg" alt="Câu 172">
+<label><input type="radio" name="q172" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q172" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q172" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 173 -->
+<div class="question" data-answer="B">
+<p><b>Câu 173:</b> Biển phải giảm tốc độ nhường đường qua đường hẹp?</p>
+<img src="90_cau_bien_bao_files/image046.jpg" alt="Câu 173">
+<label><input type="radio" name="q173" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q173" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q173" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 174 -->
+<div class="question" data-answer="C">
+<p><b>Câu 174:</b> Biển chỉ dẫn "Được ưu tiên qua đường hẹp"?</p>
+<img src="90_cau_bien_bao_files/image047.jpg" alt="Câu 174">
+<label><input type="radio" name="q174" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q174" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q174" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q174" value="D"> D. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 175 -->
+<div class="question" data-answer="C">
+<p><b>Câu 175:</b> Biển "Đường đôi"?</p>
+<img src="90_cau_bien_bao_files/image048.jpg" alt="Câu 175">
+<label><input type="radio" name="q175" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q175" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q175" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 176 -->
+<div class="question" data-answer="C">
+<p><b>Câu 176:</b> Biển "Kết thúc đường đôi"?</p>
+<img src="90_cau_bien_bao_files/image049.jpg" alt="Câu 176">
+<label><input type="radio" name="q176" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q176" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q176" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 177 -->
+<div class="question" data-answer="A">
+<p><b>Câu 177:</b> Biển "Giao nhau với đường hai chiều"?</p>
+<img src="90_cau_bien_bao_files/image050.jpg" alt="Câu 177">
+<label><input type="radio" name="q177" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q177" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q177" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 178 -->
+<div class="question" data-answer="B">
+<p><b>Câu 178:</b> Biển "Giao nhau với đường hai chiều" (ảnh 2)?</p>
+<img src="90_cau_bien_bao_files/image051.jpg" alt="Câu 178">
+<label><input type="radio" name="q178" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q178" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q178" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 179 -->
+<div class="question" data-answer="B">
+<p><b>Câu 179:</b> Biển "Chú ý chướng ngại vật"?</p>
+<img src="90_cau_bien_bao_files/image052.jpg" alt="Câu 179">
+<label><input type="radio" name="q179" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q179" value="B"> B. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q179" value="C"> C. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 180 -->
+<div class="question" data-answer="B">
+<p><b>Câu 180:</b> Biển "Đường hầm"?</p>
+<img src="90_cau_bien_bao_files/image053.jpg" alt="Câu 180">
+<label><input type="radio" name="q180" value="A"> A. Cả ba biển.</label>
+<label><input type="radio" name="q180" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q180" value="C"> C. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 181 -->
+<div class="question" data-answer="B">
+<p><b>Câu 181:</b> Biển "Cầu hẹp"?</p>
+<img src="90_cau_bien_bao_files/image054.jpg" alt="Câu 181">
+<label><input type="radio" name="q181" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q181" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q181" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 182 -->
+<div class="question" data-answer="B">
+<p><b>Câu 182:</b> Biển báo trẻ em: đi chậm đề phòng trẻ em?</p>
+<img src="90_cau_bien_bao_files/image055.jpg" alt="Câu 182">
+<label><input type="radio" name="q182" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q182" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 183 -->
+<div class="question" data-answer="B">
+<p><b>Câu 183:</b> Biển nơi bắt đầu đường dành cho người đi bộ?</p>
+<img src="90_cau_bien_bao_files/image056.jpg" alt="Câu 183">
+<label><input type="radio" name="q183" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q183" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q183" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 184 -->
+<div class="question" data-answer="B">
+<p><b>Câu 184:</b> Biển báo gần đến đoạn đường thường có trẻ em qua?</p>
+<img src="90_cau_bien_bao_files/image057.jpg" alt="Câu 184">
+<label><input type="radio" name="q184" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q184" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q184" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q184" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 185 -->
+<div class="question" data-answer="A">
+<p><b>Câu 185:</b> Biển "Dốc xuống nguy hiểm"?</p>
+<img src="90_cau_bien_bao_files/image058.jpg" alt="Câu 185">
+<label><input type="radio" name="q185" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q185" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 186 -->
+<div class="question" data-answer="A">
+<p><b>Câu 186:</b> Biển báo đường có ổ gà, lồi lõm?</p>
+<img src="90_cau_bien_bao_files/image059.jpg" alt="Câu 186">
+<label><input type="radio" name="q186" value="A"> A. Báo hiệu đường có ổ gà, lồi lõm.</label>
+<label><input type="radio" name="q186" value="B"> B. Báo hiệu gồ giảm tốc phía trước.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 187 -->
+<div class="question" data-answer="A">
+<p><b>Câu 187:</b> Các biển báo này có ý nghĩa gì?</p>
+<img src="90_cau_bien_bao_files/image060.jpg" alt="Câu 187">
+<label><input type="radio" name="q187" value="A"> A. Báo trước đất đá sụt lở bất ngờ.</label>
+<label><input type="radio" name="q187" value="B"> B. Báo trước mặt đường rời rạc.</label>
+<label><input type="radio" name="q187" value="C"> C. Cảnh báo nền đường yếu.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 188 -->
+<div class="question" data-answer="C">
+<p><b>Câu 188:</b> Biển yêu cầu tuân thủ tốc độ tối đa theo làn đường?</p>
+<img src="90_cau_bien_bao_files/image061.jpg" alt="Câu 188">
+<label><input type="radio" name="q188" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q188" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q188" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 189 -->
+<div class="question" data-answer="A">
+<p><b>Câu 189:</b> Biển cấm các phương tiện trừ ô tô và mô tô?</p>
+<img src="90_cau_bien_bao_files/image062.jpg" alt="Câu 189">
+<label><input type="radio" name="q189" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q189" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 190 -->
+<div class="question" data-answer="B">
+<p><b>Câu 190:</b> Biển ý nghĩa số lượng làn đường và hướng đi?</p>
+<img src="90_cau_bien_bao_files/image063.jpg" alt="Câu 190">
+<label><input type="radio" name="q190" value="A"> A. Chỉ hướng đi phải theo.</label>
+<label><input type="radio" name="q190" value="B"> B. Cho biết số làn và hướng đi trên mỗi làn.</label>
+<label><input type="radio" name="q190" value="C"> C. Chỉ hướng đường phải theo.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 191 -->
+<div class="question" data-answer="C">
+<p><b>Câu 191:</b> Biển cho phép rẽ sang hướng khác (đặt trước ngã ba, ngã tư)?</p>
+<img src="90_cau_bien_bao_files/image064.jpg" alt="Câu 191">
+<label><input type="radio" name="q191" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q191" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q191" value="C"> C. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 192 -->
+<div class="question" data-answer="A">
+<p><b>Câu 192:</b> Biển "Hướng đi thẳng phải theo"?</p>
+<img src="90_cau_bien_bao_files/image065.jpg" alt="Câu 192">
+<label><input type="radio" name="q192" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q192" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 193 -->
+<div class="question" data-answer="B">
+<p><b>Câu 193:</b> Biển "Đường một chiều"?</p>
+<img src="90_cau_bien_bao_files/image066.jpg" alt="Câu 193">
+<label><input type="radio" name="q193" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q193" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q193" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 194 -->
+<div class="question" data-answer="A">
+<p><b>Câu 194:</b> Biển "Hết tốc độ tối đa cho phép"?</p>
+<img src="90_cau_bien_bao_files/image067.jpg" alt="Câu 194">
+<label><input type="radio" name="q194" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q194" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q194" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q194" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 195 -->
+<div class="question" data-answer="C">
+<p><b>Câu 195:</b> Biển "Hết tốc độ tối thiểu"?</p>
+<img src="90_cau_bien_bao_files/image067.jpg" alt="Câu 195">
+<label><input type="radio" name="q195" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q195" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q195" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q195" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 196 -->
+<div class="question" data-answer="D">
+<p><b>Câu 196:</b> Biển báo hết cấm vượt?</p>
+<img src="90_cau_bien_bao_files/image068.jpg" alt="Câu 196">
+<label><input type="radio" name="q196" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q196" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q196" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q196" value="D"> D. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 197 -->
+<div class="question" data-answer="B">
+<p><b>Câu 197:</b> Biển "Hết mọi lệnh cấm"?</p>
+<img src="90_cau_bien_bao_files/image069.jpg" alt="Câu 197">
+<label><input type="radio" name="q197" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q197" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q197" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q197" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 198 -->
+<div class="question" data-answer="C">
+<p><b>Câu 198:</b> Biển cho phép quay đầu xe (trước ngã ba, ngã tư)?</p>
+<img src="90_cau_bien_bao_files/image070.jpg" alt="Câu 198">
+<label><input type="radio" name="q198" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q198" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q198" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q198" value="D"> D. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 199 -->
+<div class="question" data-answer="A">
+<p><b>Câu 199:</b> Biển không cho phép rẽ phải?</p>
+<img src="90_cau_bien_bao_files/image071.jpg" alt="Câu 199">
+<label><input type="radio" name="q199" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q199" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q199" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q199" value="D"> D. Biển 1 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 200 -->
+<div class="question" data-answer="A">
+<p><b>Câu 200:</b> Gặp biển nào không được đi thẳng, phải rẽ?</p>
+<img src="90_cau_bien_bao_files/image072.jpg" alt="Câu 200">
+<label><input type="radio" name="q200" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q200" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q200" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q200" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 201 -->
+<div class="question" data-answer="A">
+<p><b>Câu 201:</b> Biển số 1 có ý nghĩa gì?</p>
+<img src="90_cau_bien_bao_files/image073.jpg" alt="Câu 201">
+<label><input type="radio" name="q201" value="A"> A. Hết cấm đỗ xe theo giờ trong khu vực.</label>
+<label><input type="radio" name="q201" value="B"> B. Hết hiệu lực khu vực đỗ xe.</label>
+<label><input type="radio" name="q201" value="C"> C. Khu vực đỗ xe.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 202 -->
+<div class="question" data-answer="A">
+<p><b>Câu 202:</b> Biển chỉ dẫn người đi bộ sử dụng cầu vượt?</p>
+<img src="90_cau_bien_bao_files/image074.jpg" alt="Câu 202">
+<label><input type="radio" name="q202" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q202" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q202" value="C"> C. Cả hai biển.</label>
+<label><input type="radio" name="q202" value="D"> D. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 203 -->
+<div class="question" data-answer="B">
+<p><b>Câu 203:</b> Biển hầm chui cho người đi bộ?</p>
+<img src="90_cau_bien_bao_files/image075.jpg" alt="Câu 203">
+<label><input type="radio" name="q203" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q203" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q203" value="C"> C. Cả hai biển.</label>
+<label><input type="radio" name="q203" value="D"> D. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 204 -->
+<div class="question" data-answer="B">
+<p><b>Câu 204:</b> Biển "Nơi đỗ xe dành cho người khuyết tật"?</p>
+<img src="90_cau_bien_bao_files/image076.jpg" alt="Câu 204">
+<label><input type="radio" name="q204" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q204" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q204" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 205 -->
+<div class="question" data-answer="C">
+<p><b>Câu 205:</b> Gặp biển này, xử lý thế nào?</p>
+<img src="90_cau_bien_bao_files/image077.jpg" alt="Câu 205">
+<label><input type="radio" name="q205" value="A"> A. Dừng xe tại khu vực CSGT.</label>
+<label><input type="radio" name="q205" value="B"> B. Tiếp tục tốc độ bình thường.</label>
+<label><input type="radio" name="q205" value="C"> C. Giảm tốc độ an toàn, không vượt.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 206 -->
+<div class="question" data-answer="A">
+<p><b>Câu 206:</b> Có bắt buộc chạy vòng theo đảo an toàn khi chuyển hướng?</p>
+<img src="90_cau_bien_bao_files/image078.jpg" alt="Câu 206">
+<label><input type="radio" name="q206" value="A"> A. Bắt buộc.</label>
+<label><input type="radio" name="q206" value="B"> B. Không bắt buộc.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 207 -->
+<div class="question" data-answer="C">
+<p><b>Câu 207:</b> Biển "Cầu vượt liên thông"?</p>
+<img src="90_cau_bien_bao_files/image079.jpg" alt="Câu 207">
+<label><input type="radio" name="q207" value="A"> A. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q207" value="B"> B. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q207" value="C"> C. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q207" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 208 -->
+<div class="question" data-answer="C">
+<p><b>Câu 208:</b> Biển số 1 ý nghĩa?</p>
+<img src="90_cau_bien_bao_files/image080.jpg" alt="Câu 208">
+<label><input type="radio" name="q208" value="A"> A. Đi thẳng hoặc rẽ trái trên cầu vượt.</label>
+<label><input type="radio" name="q208" value="B"> B. Đi thẳng hoặc rẽ phải trên cầu vượt.</label>
+<label><input type="radio" name="q208" value="C"> C. Báo hiệu cầu vượt liên thông.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 209 -->
+<div class="question" data-answer="A">
+<p><b>Câu 209:</b> Biển "Tuyến đường cầu vượt cắt qua"?</p>
+<img src="90_cau_bien_bao_files/image081.jpg" alt="Câu 209">
+<label><input type="radio" name="q209" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q209" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q209" value="C"> C. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 210 -->
+<div class="question" data-answer="A">
+<p><b>Câu 210:</b> Biển báo ý nghĩa khoảng cách đến làn thoát khẩn cấp?</p>
+<img src="90_cau_bien_bao_files/image082.jpg" alt="Câu 210">
+<label><input type="radio" name="q210" value="A"> A. Khoảng cách đến làn cứu nạn.</label>
+<label><input type="radio" name="q210" value="B"> B. Báo đường cụt.</label>
+<label><input type="radio" name="q210" value="C"> C. Nút giao gần nhất.</label>
+<label><input type="radio" name="q210" value="D"> D. Trạm dừng nghỉ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 211 -->
+<div class="question" data-answer="B">
+<p><b>Câu 211:</b> Làn đường riêng cho từng loại xe, có được chuyển làn?</p>
+<img src="90_cau_bien_bao_files/image083.jpg" alt="Câu 211">
+<label><input type="radio" name="q211" value="A"> A. Được phép chuyển.</label>
+<label><input type="radio" name="q211" value="B"> B. Không được phép chuyển, chỉ đi trong làn quy định.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 212 -->
+<div class="question" data-answer="B">
+<p><b>Câu 212:</b> Biển cho phép đi cả hai hướng?</p>
+<img src="90_cau_bien_bao_files/image084.jpg" alt="Câu 212">
+<label><input type="radio" name="q212" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q212" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 213 -->
+<div class="question" data-answer="B">
+<p><b>Câu 213:</b> Biển này ý nghĩa (chỉ dẫn hướng rẽ vào đường cong)?</p>
+<img src="90_cau_bien_bao_files/image085.jpg" alt="Câu 213">
+<label><input type="radio" name="q213" value="A"> A. Cảnh báo chướng ngại vật và hướng đi qua.</label>
+<label><input type="radio" name="q213" value="B"> B. Chỉ dẫn hướng rẽ chuẩn bị đổi hướng vào đường cong nguy hiểm.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 214 -->
+<div class="question" data-answer="C">
+<p><b>Câu 214:</b> Vạch mũi tên nào cho phép đi thẳng và rẽ phải?</p>
+<img src="90_cau_bien_bao_files/image086.jpg" alt="Câu 214">
+<label><input type="radio" name="q214" value="A"> A. Vạch 1.</label>
+<label><input type="radio" name="q214" value="B"> B. Vạch 2 và vạch 3.</label>
+<label><input type="radio" name="q214" value="C"> C. Vạch 3.</label>
+<label><input type="radio" name="q214" value="D"> D. Vạch 1 và vạch 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 215 -->
+<div class="question" data-answer="B">
+<p><b>Câu 215:</b> Vạch phân chia hai chiều, không được lấn làn?</p>
+<img src="90_cau_bien_bao_files/image087.jpg" alt="Câu 215">
+<label><input type="radio" name="q215" value="A"> A. Vạch 1.</label>
+<label><input type="radio" name="q215" value="B"> B. Vạch 2.</label>
+<label><input type="radio" name="q215" value="C"> C. Vạch 3.</label>
+<label><input type="radio" name="q215" value="D"> D. Cả ba vạch.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<div class="filter-buttons">
+    <button id="showWrongBtn">📌 Chỉ xem câu làm sai</button>
+    <button id="showAllBtn">🔄 Hiện lại tất cả câu</button>
+</div>
+
+<script>
+    // Hàm kiểm tra đáp án và tự động lưu trạng thái đúng/sai vào thuộc tính data-correct của câu hỏi
+    function checkAnswer(button) {
+        const questionDiv = button.parentElement;
+        const selectedRadio = questionDiv.querySelector('input[type="radio"]:checked');
+        const resultPara = questionDiv.querySelector('.result');
+        if (!selectedRadio) {
+            resultPara.innerHTML = '<span class="wrong">⚠️ Vui lòng chọn đáp án.</span>';
+            questionDiv.setAttribute('data-has-answered', 'true');
+            questionDiv.setAttribute('data-is-correct', 'false');
+            return;
+        }
+        const userAnswer = selectedRadio.value;
+        const correctAnswer = questionDiv.getAttribute('data-answer');
+        if (userAnswer === correctAnswer) {
+            resultPara.innerHTML = '<span class="correct">✅ Chính xác!</span>';
+            questionDiv.setAttribute('data-is-correct', 'true');
+        } else {
+            resultPara.innerHTML = `<span class="wrong">❌ Sai. Đáp án đúng: ${correctAnswer}.</span>`;
+            questionDiv.setAttribute('data-is-correct', 'false');
+        }
+        questionDiv.setAttribute('data-has-answered', 'true');
+    }
+
+    // Lọc hiện câu sai
+    function showWrongQuestions() {
+        const allQuestions = document.querySelectorAll('.question');
+        let anyWrong = false;
+        allQuestions.forEach(q => {
+            const hasAnswered = q.getAttribute('data-has-answered') === 'true';
+            const isCorrect = q.getAttribute('data-is-correct') === 'true';
+            if (hasAnswered && !isCorrect) {
+                q.classList.remove('hidden-question');
+                anyWrong = true;
+            } else {
+                q.classList.add('hidden-question');
+            }
+        });
+        if (!anyWrong) {
+            // Nếu chưa có câu sai nào (hoặc chưa làm câu nào sai) có thể thông báo
+            alert('Chưa có câu trả lời sai nào! Hãy làm thử vài câu trước.');
+            // Hiện lại tất cả để tránh trắng màn hình
+            showAllQuestions();
+        }
+    }
+
+    // Hiện tất cả câu
+    function showAllQuestions() {
+        const allQuestions = document.querySelectorAll('.question');
+        allQuestions.forEach(q => {
+            q.classList.remove('hidden-question');
+        });
+    }
+
+    // Gán sự kiện cho nút
+    document.getElementById('showWrongBtn').addEventListener('click', showWrongQuestions);
+    document.getElementById('showAllBtn').addEventListener('click', showAllQuestions);
+</script>
+<footer>📌 90 CÂU BIỂN BÁO GIAO THÔNG GPLX (A, A1) | Chúc Ôn tập hiệu quả</footer>
+</body>
+</html>

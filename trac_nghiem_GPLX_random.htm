@@ -1,0 +1,2896 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📘 Trắc nghiệm GPLX (A, A1) random 25 câu</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f2f5;
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #1e466e;
+        border-bottom: 3px solid #ffc107;
+        display: inline-block;
+        width: auto;
+        margin: 0 auto 25px auto;
+        padding-bottom: 8px;
+    }
+    .title-wrapper {
+        text-align: center;
+    }
+    .question {
+        background: white;
+        padding: 20px 22px;
+        margin-bottom: 28px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: 0.2s;
+        border-left: 5px solid #ffc107;
+    }
+    .question img {
+        max-width: 100%;
+        display: block;
+        margin: 15px auto;
+        border-radius: 12px;
+        background: #f9f9f9;
+        padding: 5px;
+    }
+    label {
+        display: block;
+        margin: 12px 0 12px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        line-height: 1.4;
+    }
+    input[type="radio"] {
+        margin-right: 12px;
+        transform: scale(1.1);
+        vertical-align: middle;
+    }
+    button {
+        background: #1e466e;
+        color: white;
+        border: none;
+        padding: 8px 22px;
+        margin-top: 12px;
+        border-radius: 40px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: 0.2s;
+        font-weight: bold;
+    }
+    button:hover {
+        background: #ff8c00;
+        transform: scale(1.02);
+    }
+    .result {
+        margin-top: 12px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .correct {
+        color: #2a7f2a;
+        background: #e6f4e6;
+        padding: 6px 12px;
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .wrong {
+        color: #c0392b;
+        background: #fee9e7;
+        padding: 6px 12px;
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .filter-buttons {
+        text-align: center;
+        margin: 20px 0 30px;
+    }
+    .filter-buttons button {
+        margin: 0 10px;
+        background: #2c3e66;
+    }
+    .filter-buttons button:first-child {
+        background: #b83b2e;
+    }
+    .filter-buttons button:first-child:hover {
+        background: #a03226;
+    }
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 0.8rem;
+        color: #5a626e;
+    }
+    .hidden-question {
+        display: none;
+    }
+</style>
+</head>
+<body>
+<div class="title-wrapper">
+<h1>📘 Trắc nghiệm<br>GPLX (A, A1) random 25 câu</h1>
+</div>
+
+<div id="quiz"></div>
+<h3 id="score"></h3>
+<div style="text-align:center;margin:15px 0;">
+	<button onclick="gradeAll()">✅ Chấm điểm</button>
+	<button onclick="showWrong()">📌 Xem câu sai</button>
+	<button onclick="showAll()">🔄 Hiện tất cả</button>
+</div>
+
+<div id="allQuestions" style="display:none;">
+
+<!-- Begin Danh sách câu -->
+
+<!-- Câu 1 -->
+<div class="question" data-answer="B">
+<p><b>Câu 1:</b> Phần của đường bộ được sử dụng cho phương tiện giao thông đường bộ đi lại là gì?</p>
+<label><input type="radio" name="q1" value="A"> A. Phần mặt đường và lề đường.</label>
+<label><input type="radio" name="q1" value="B"> B. Phần đường xe chạy.</label>
+<label><input type="radio" name="q1" value="C"> C. Phần đường xe cơ giới.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 2 -->
+<div class="question" data-answer="B">
+<p><b>Câu 2:</b> Làn đường là gì?</p>
+<label><input type="radio" name="q2" value="A"> A. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy.</label>
+<label><input type="radio" name="q2" value="B"> B. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ chiều rộng cho xe chạy an toàn.</label>
+<label><input type="radio" name="q2" value="C"> C. Là đường cho xe ô tô chạy, dừng, đỗ an toàn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 3 -->
+<div class="question" data-answer="A">
+<p><b>Câu 3:</b> Khổ giới hạn của đường bộ được hiểu như thế nào là đúng?</p>
+<label><input type="radio" name="q3" value="A"> A. Khổ giới hạn của đường bộ là khoảng trống có kích thước giới hạn về chiều rộng, chiều cao của đường bộ để các xe, bao gồm cả hàng hoá xếp trên xe đi qua được an toàn và được xác định theo quy chuẩn, tiêu chuẩn kỹ thuật của đường bộ.</label>
+<label><input type="radio" name="q3" value="B"> B. Là khoảng trống có kích thước giới hạn về chiều rộng của đường, cầu, bến phà, hầm trên đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn.</label>
+<label><input type="radio" name="q3" value="C"> C. Là khoảng trống có kích thước giới hạn về chiều cao của cầu, bến phà, hầm trên đường bộ để các xe đi qua được an toàn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 4 -->
+<div class="question" data-answer="B">
+<p><b>Câu 4:</b> Dải phân cách được lắp đặt để làm gì?</p>
+<label><input type="radio" name="q4" value="A"> A. Để phân chia các làn đường dành cho xe cơ giới và xe thô sơ trên đường cao tốc.</label>
+<label><input type="radio" name="q4" value="B"> B. Để phân chia phần đường xe chạy thành hai chiều riêng biệt hoặc để phân chia phần đường dành cho xe cơ giới và xe thô sơ hoặc của nhiều loại xe khác nhau trên cùng một chiều đường.</label>
+<label><input type="radio" name="q4" value="C"> C. Để phân tách phần đường xe chạy và hành lang an toàn giao thông.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 5 -->
+<div class="question" data-answer="B">
+<p><b>Câu 5:</b> Vạch kẻ đường là gì?</p>
+<label><input type="radio" name="q5" value="A"> A. Là báo hiệu đường bộ để hỗ trợ cảnh báo nguy hiểm cho người tham gia giao thông đường bộ.</label>
+<label><input type="radio" name="q5" value="B"> B. Là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại.</label>
+<label><input type="radio" name="q5" value="C"> C. Là báo hiệu cho người tham gia giao thông đường bộ về các thông tin của đường bộ.</label>
+<label><input type="radio" name="q5" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 6 -->
+<div class="question" data-answer="A">
+<p><b>Câu 6:</b> Người điều khiển phương tiện tham gia giao thông đường bộ được hiểu như thế nào là đúng?</p>
+<label><input type="radio" name="q6" value="A"> A. Là người điều khiển xe cơ giới, người điều khiển xe thô sơ, người điều khiển xe máy chuyên dùng.</label>
+<label><input type="radio" name="q6" value="B"> B. Là người được giao nhiệm vụ hướng dẫn giao thông trên đường bộ.</label>
+<label><input type="radio" name="q6" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 7 -->
+<div class="question" data-answer="A">
+<p><b>Câu 7:</b> Người lái xe được hiểu như thế nào là đúng?</p>
+<label><input type="radio" name="q7" value="A"> A. Là người điều khiển xe cơ giới.</label>
+<label><input type="radio" name="q7" value="B"> B. Là người điều khiển xe thô sơ.</label>
+<label><input type="radio" name="q7" value="C"> C. Là người điều khiển xe máy chuyên dùng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 8 -->
+<div class="question" data-answer="B">
+<p><b>Câu 8:</b> Trong nhóm các phương tiện giao thông đường bộ dưới đây, nhóm phương tiện nào là xe cơ giới?</p>
+<label><input type="radio" name="q8" value="A"> A. Xe ô tô; máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy; xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng; xe đạp, xe đạp máy, xe đạp điện.</label>
+<label><input type="radio" name="q8" value="B"> B. Xe ô tô; rơ moóc được kéo bởi xe ô tô; sơ mi rơ moóc được kéo bởi ô tô đầu kéo; xe chở người bốn bánh có gắn động cơ; xe chở hàng bốn bánh có gắn động cơ; xe mô tô, xe gắn máy và các loại xe tương tự.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 9 -->
+<div class="question" data-answer="A">
+<p><b>Câu 9:</b> Trong nhóm các phương tiện giao thông đường bộ dưới đây, nhóm phương tiện nào là xe thô sơ?</p>
+<label><input type="radio" name="q9" value="A"> A. Xe đạp, xe đạp máy, xe đạp điện; xe xích lô; xe lăn dùng cho người khuyết tật; xe vật nuôi kéo và các loại xe tương tự.</label>
+<label><input type="radio" name="q9" value="B"> B. Xe đạp (kể cả xe đạp máy, xe đạp điện), xe gắn máy, xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng.</label>
+<label><input type="radio" name="q9" value="C"> C. Xe ô tô, máy kéo, rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 10 -->
+<div class="question" data-answer="C">
+<p><b>Câu 10:</b> Phương tiện giao thông đường bộ gồm những loại nào?</p>
+<label><input type="radio" name="q10" value="A"> A. Phương tiện giao thông cơ giới đường bộ.</label>
+<label><input type="radio" name="q10" value="B"> B. Phương tiện giao thông thô sơ đường bộ, xe máy chuyên dùng và các loại xe tương tự.</label>
+<label><input type="radio" name="q10" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 11 -->
+<div class="question" data-answer="C">
+<p><b>Câu 11:</b> Người tham gia giao thông đường bộ gồm những đối tượng nào?</p>
+<label><input type="radio" name="q11" value="A"> A. Người điều khiển, người được chở trên phương tiện tham gia giao thông đường bộ.</label>
+<label><input type="radio" name="q11" value="B"> B. Người điều khiển, dẫn dắt vật nuôi trên đường bộ; người đi bộ trên đường bộ.</label>
+<label><input type="radio" name="q11" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 12 -->
+<div class="question" data-answer="C">
+<p><b>Câu 12:</b> Người điều khiển phương tiện tham gia giao thông đường bộ gồm những đối tượng nào dưới đây?</p>
+<label><input type="radio" name="q12" value="A"> A. Người điều khiển xe cơ giới, người điều khiển xe thô sơ.</label>
+<label><input type="radio" name="q12" value="B"> B. Người điều khiển xe máy chuyên dùng.</label>
+<label><input type="radio" name="q12" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 13 -->
+<div class="question" data-answer="B">
+<p><b>Câu 13:</b> Người điều khiển giao thông đường bộ được hiểu như thế nào là đúng?</p>
+<label><input type="radio" name="q13" value="A"> A. Là người điều khiển phương tiện tham gia giao thông đường bộ.</label>
+<label><input type="radio" name="q13" value="B"> B. Là Cảnh sát giao thông và người được giao nhiệm vụ hướng dẫn giao thông trên đường bộ.</label>
+<label><input type="radio" name="q13" value="C"> C. Là người tham gia giao thông đường bộ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 14 -->
+<div class="question" data-answer="B">
+<p><b>Câu 14:</b> Hành vi nào dưới đây bị nghiêm cấm?</p>
+<label><input type="radio" name="q14" value="A"> A. Sử dụng xe đạp đi trên các tuyến quốc lộ.</label>
+<label><input type="radio" name="q14" value="B"> B. Rải vật sắc nhọn, đổ chất gây trơn trượt trên đường bộ.</label>
+<label><input type="radio" name="q14" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 15 -->
+<div class="question" data-answer="C">
+<p><b>Câu 15:</b> Hành vi đưa xe cơ giới, xe máy chuyên dùng tham gia giao thông đường bộ nào dưới đây bị cấm?</p>
+<label><input type="radio" name="q15" value="A"> A. Không có chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường.</label>
+<label><input type="radio" name="q15" value="B"> B. Hết niên hạn sử dụng.</label>
+<label><input type="radio" name="q15" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 16 -->
+<div class="question" data-answer="C">
+<p><b>Câu 16:</b> Tổ chức đua xe được phép thực hiện khi nào?</p>
+<label><input type="radio" name="q16" value="A"> A. Trên đường phố không có người qua lại.</label>
+<label><input type="radio" name="q16" value="B"> B. Được người dân ủng hộ.</label>
+<label><input type="radio" name="q16" value="C"> C. Được cơ quan có thẩm quyền cấp phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 17 -->
+<div class="question" data-answer="B">
+<p><b>Câu 17:</b> Hành vi đua xe trái phép bị xử lý như thế nào?</p>
+<label><input type="radio" name="q17" value="A"> A. Chỉ bị nhắc nhở.</label>
+<label><input type="radio" name="q17" value="B"> B. Tùy theo mức độ của hành vi vi phạm có thể bị xử lý hành chính hoặc xử lý hình sự.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 18 -->
+<div class="question" data-answer="A">
+<p><b>Câu 18:</b> Người điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?</p>
+<label><input type="radio" name="q18" value="A"> A. Bị nghiêm cấm.</label>
+<label><input type="radio" name="q18" value="B"> B. Không bị nghiêm cấm.</label>
+<label><input type="radio" name="q18" value="C"> C. Không bị nghiêm cấm, nếu nồng độ cồn ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 19 -->
+<div class="question" data-answer="A">
+<p><b>Câu 19:</b> Theo Luật Phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu, bia khi tham gia giao thông?</p>
+<label><input type="radio" name="q19" value="A"> A. Người điều khiển xe ô tô, xe mô tô, xe đạp, xe gắn máy.</label>
+<label><input type="radio" name="q19" value="B"> B. Người được chở trên xe cơ giới.</label>
+<label><input type="radio" name="q19" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 20 -->
+<div class="question" data-answer="D">
+<p><b>Câu 20:</b> Hành vi giao xe ô tô, mô tô cho người nào sau đây tham gia giao thông đường bộ bị nghiêm cấm?</p>
+<label><input type="radio" name="q20" value="A"> A. Người chưa đủ tuổi theo quy định.</label>
+<label><input type="radio" name="q20" value="B"> B. Người không có giấy phép lái xe.</label>
+<label><input type="radio" name="q20" value="C"> C. Người có giấy phép lái xe nhưng đã bị trừ hết 12 điểm.</label>
+<label><input type="radio" name="q20" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 21 -->
+<div class="question" data-answer="C">
+<p><b>Câu 21:</b> Hành vi nào sau đây bị nghiêm cấm?</p>
+<label><input type="radio" name="q21" value="A"> A. Điều khiển xe cơ giới lạng lách, đánh võng, rú ga liên tục khi tham gia giao thông trên đường.</label>
+<label><input type="radio" name="q21" value="B"> B. Xúc phạm, đe dọa, cản trở, chống đối hoặc không chấp hành hiệu lệnh, hướng dẫn, yêu cầu kiểm tra, kiểm soát của người thi hành công vụ về bảo đảm trật tự, an toàn giao thông đường bộ.</label>
+<label><input type="radio" name="q21" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 22 -->
+<div class="question" data-answer="B">
+<p><b>Câu 22:</b> Các hành vi nào sau đây bị cấm đối với phương tiện tham gia giao thông đường bộ?</p>
+<label><input type="radio" name="q22" value="A"> A. Cải tạo xe ô tô loại khác thành xe ô tô chở người phục vụ mục đích quốc phòng, an ninh.</label>
+<label><input type="radio" name="q22" value="B"> B. Cải tạo trái phép; cố ý can thiệp làm sai lệch chỉ số trên đồng hồ báo quãng đường đã chạy của xe ô tô; cắt, hàn, tẩy xóa, đục sửa, đóng lại trái phép số khung, số động cơ của xe cơ giới, xe máy chuyên dùng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 23 -->
+<div class="question" data-answer="C">
+<p><b>Câu 23:</b> Hành vi nào sau đây bị cấm?</p>
+<label><input type="radio" name="q23" value="A"> A. Lắp đặt, sử dụng thiết bị âm thanh, ánh sáng trên xe cơ giới, xe máy chuyên dùng gây mất trật tự, an toàn giao thông đường bộ.</label>
+<label><input type="radio" name="q23" value="B"> B. Cản trở người, phương tiện tham gia giao thông trên đường bộ; ném gạch, đất, đá, cát hoặc vật thể khác vào người, phương tiện đang tham gia giao thông trên đường bộ.</label>
+<label><input type="radio" name="q23" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 24 -->
+<div class="question" data-answer="B">
+<p><b>Câu 24:</b> Việc sản xuất, sử dụng, mua, bán trái phép biển số xe có bị nghiêm cấm hay không?</p>
+<label><input type="radio" name="q24" value="A"> A. Không bị nghiêm cấm.</label>
+<label><input type="radio" name="q24" value="B"> B. Bị nghiêm cấm.</label>
+<label><input type="radio" name="q24" value="C"> C. Bị nghiêm cấm tuỳ trường hợp.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 25 -->
+<div class="question" data-answer="C">
+<p><b>Câu 25:</b> Khi điều khiển phương tiện tham gia giao thông, những hành vi nào dưới đây bị nghiêm cấm?</p>
+<label><input type="radio" name="q25" value="A"> A. Thay đổi tốc độ của xe nhiều lần.</label>
+<label><input type="radio" name="q25" value="B"> B. Điều khiển phương tiện sau 23 giờ trong ngày.</label>
+<label><input type="radio" name="q25" value="C"> C. Lạng lách, đánh võng, rú ga liên tục.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 26 -->
+<div class="question" data-answer="C">
+<p><b>Câu 26:</b> Có bao nhiêu nhóm biển báo hiệu đường bộ?</p>
+<label><input type="radio" name="q26" value="A"> A. Ba nhóm: Biển báo cấm, biển báo nguy hiểm và biển hiệu lệnh.</label>
+<label><input type="radio" name="q26" value="B"> B. Bốn nhóm: Biển báo cấm, biển báo nguy hiểm, biển hiệu lệnh và biển phụ.</label>
+<label><input type="radio" name="q26" value="C"> C. Năm nhóm: Biển báo cấm, biển báo nguy hiểm, biển hiệu lệnh, biển chỉ dẫn, biển phụ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 27 -->
+<div class="question" data-answer="B">
+<p><b>Câu 27:</b> Tại nơi có vạch kẻ đường hoặc tại nơi mà người đi bộ, xe lăn của người khuyết tật đang qua đường, người điều khiển phương tiện tham gia giao thông phải thực hiện như thế nào?</p>
+<label><input type="radio" name="q27" value="A"> A. Quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn cho người đi bộ, xe lăn của người khuyết tật qua đường.</label>
+<label><input type="radio" name="q27" value="B"> B. Quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn cho người đi bộ, xe lăn của người khuyết tật qua đường.</label>
+<label><input type="radio" name="q27" value="C"> C. Quan sát, tăng tốc độ và điều khiển phương tiện nhanh chóng đi qua.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 28 -->
+<div class="question" data-answer="D">
+<p><b>Câu 28:</b> Người điều khiển xe mô tô phải quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn trong các trường hợp nào dưới đây?</p>
+<label><input type="radio" name="q28" value="A"> A. Đường hẹp, đường vòng, đường quanh co, đường đèo, dốc.</label>
+<label><input type="radio" name="q28" value="B"> B. Nơi cầu, cống hẹp, đập tràn, đường ngầm, hầm chui, hầm đường bộ.</label>
+<label><input type="radio" name="q28" value="C"> C. Trời mưa, gió, sương, khói, bụi, mặt đường trơn trượt, lầy lội, có nhiều đất đá, vật liệu rơi vãi ảnh hưởng đến an toàn giao thông đường bộ.</label>
+<label><input type="radio" name="q28" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 29 (có hình ảnh) -->
+<div class="question" data-answer="D">
+<p><b>Câu 29:</b> Khi gặp hiệu lệnh điều khiển của Cảnh sát giao thông như hình dưới đây thì người tham gia giao thông đường bộ phải đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="125_cau_ly_thuyet_files/image001.jpg" alt="Câu 29">
+<label><input type="radio" name="q29" value="A"> A. Người tham gia giao thông đường bộ ở các hướng phải dừng lại.</label>
+<label><input type="radio" name="q29" value="B"> B. Người tham gia giao thông đường bộ ở các hướng được đi theo chiều gậy chỉ của Cảnh sát giao thông.</label>
+<label><input type="radio" name="q29" value="C"> C. Người tham gia giao thông đường bộ ở phía trước và phía sau người điều khiển được đi tất cả các hướng; người tham gia giao thông ở phía bên phải và phía bên trái người điều khiển phải dừng lại.</label>
+<label><input type="radio" name="q29" value="D"> D. Người tham gia giao thông đường bộ ở phía trước và phía sau người điều khiển phải dừng lại; người tham gia giao thông đường bộ ở phía bên phải và phía bên trái người điều khiển được đi tất cả các hướng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 30 (có hình) -->
+<div class="question" data-answer="C">
+<p><b>Câu 30:</b> Khi gặp hiệu lệnh điều khiển của Cảnh sát giao thông như hình dưới đây thì người tham gia giao thông đường bộ phải đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="125_cau_ly_thuyet_files/image002.jpg" alt="Câu 30">
+<label><input type="radio" name="q30" value="A"> A. Người tham gia giao thông đường bộ ở phía sau Cảnh sát giao thông được đi, các hướng khác phải dừng lại.</label>
+<label><input type="radio" name="q30" value="B"> B. Người tham gia giao thông đường bộ được rẽ phải theo chiều mũi tên màu xanh ở bục Cảnh sát giao thông.</label>
+<label><input type="radio" name="q30" value="C"> C. Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại, trừ các xe đã ở trong khu vực giao nhau.</label>
+<label><input type="radio" name="q30" value="D"> D. Người tham gia giao thông đường bộ ở phía trước Cảnh sát giao thông phải dừng lại, các hướng khác được đi.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 31 -->
+<div class="question" data-answer="A">
+<p><b>Câu 31:</b> Khi hiệu lệnh của người điều khiển giao thông trái với tín hiệu đèn giao thông hoặc biển báo hiệu đường bộ thì người tham gia giao thông đường bộ phải chấp hành báo hiệu đường bộ nào dưới đây?</p>
+<label><input type="radio" name="q31" value="A"> A. Theo hiệu lệnh của người điều khiển giao thông.</label>
+<label><input type="radio" name="q31" value="B"> B. Theo tín hiệu đèn giao thông.</label>
+<label><input type="radio" name="q31" value="C"> C. Theo biển báo hiệu đường bộ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 32 -->
+<div class="question" data-answer="B">
+<p><b>Câu 32:</b> Khi ở một vị trí vừa có biển báo hiệu đặt cố định vừa có biển báo hiệu tạm thời mà hai biển có ý nghĩa khác nhau, người tham gia giao thông đường bộ phải chấp hành hiệu lệnh của biển báo hiệu nào?</p>
+<label><input type="radio" name="q32" value="A"> A. Biển báo hiệu đặt cố định.</label>
+<label><input type="radio" name="q32" value="B"> B. Biển báo hiệu tạm thời.</label>
+<label><input type="radio" name="q32" value="C"> C. Theo quyết định của người tham gia giao thông nhưng phải bảo đảm an toàn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 33 -->
+<div class="question" data-answer="A">
+<p><b>Câu 33:</b> Tại nơi đường giao nhau, khi đèn điều khiển giao thông có tín hiệu màu vàng, người điều khiển phương tiện tham gia giao thông phải chấp hành như thế nào là đúng quy tắc giao thông?</p>
+<label><input type="radio" name="q33" value="A"> A. Dừng lại trước vạch dừng; trường hợp đang đi trên vạch dừng hoặc đã đi qua vạch dừng mà tín hiệu đèn màu vàng thì được đi tiếp; trường hợp tín hiệu đèn màu vàng nhấp nháy, người điều khiển phương tiện được đi nhưng phải quan sát, giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường hoặc các phương tiện khác.</label>
+<label><input type="radio" name="q33" value="B"> B. Tăng tốc độ nhanh chóng vượt qua nút giao.</label>
+<label><input type="radio" name="q33" value="C"> C. Quan sát, giảm tốc độ, từ từ vượt qua nút giao.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 34 -->
+<div class="question" data-answer="C">
+<p><b>Câu 34:</b> Người lái xe trên đường cần chấp hành quy định về tốc độ tối đa như thế nào?</p>
+<label><input type="radio" name="q34" value="A"> A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.</label>
+<label><input type="radio" name="q34" value="B"> B. Chỉ lớn hơn tốc độ tối đa cho phép khi vào ban đêm.</label>
+<label><input type="radio" name="q34" value="C"> C. Không vượt quá tốc độ tối đa cho phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 35 -->
+<div class="question" data-answer="B">
+<p><b>Câu 35:</b> Phương tiện tham gia giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?</p>
+<label><input type="radio" name="q35" value="A"> A. Đi về bên trái theo chiều đi của mình.</label>
+<label><input type="radio" name="q35" value="B"> B. Đi về bên phải theo chiều đi của mình.</label>
+<label><input type="radio" name="q35" value="C"> C. Đi ở bất cứ bên nào nhưng phải bấm đèn cảnh báo nguy hiểm để báo hiệu cho các phương tiện khác.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 36 -->
+<div class="question" data-answer="B">
+<p><b>Câu 36:</b> Trên một chiều đường có vạch kẻ phân làn đường, người lái xe cơ giới, xe máy chuyên dùng phải điều khiển xe đi trên làn đường nào?</p>
+<label><input type="radio" name="q36" value="A"> A. Đi trên làn đường bên phải trong cùng.</label>
+<label><input type="radio" name="q36" value="B"> B. Đi trên làn đường bên trái.</label>
+<label><input type="radio" name="q36" value="C"> C. Đi ở bất cứ làn nào nhưng phải bảo đảm tốc độ cho phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 37 -->
+<div class="question" data-answer="C">
+<p><b>Câu 37:</b> Người lái xe phải giảm tốc độ, có tín hiệu rẽ phải và đi sát về bên phải của phần đường xe chạy trong các trường hợp nào dưới đây?</p>
+<label><input type="radio" name="q37" value="A"> A. Khi xe chạy phía trước có tín hiệu vượt xe khác.</label>
+<label><input type="radio" name="q37" value="B"> B. Khi phía trước có xe chạy ngược chiều.</label>
+<label><input type="radio" name="q37" value="C"> C. Khi xe sau xin vượt nếu đủ điều kiện an toàn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 38 -->
+<div class="question" data-answer="A">
+<p><b>Câu 38:</b> Vượt xe là gì?</p>
+<label><input type="radio" name="q38" value="A"> A. Là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước.</label>
+<label><input type="radio" name="q38" value="B"> B. Là tình huống giao thông trên đường có từ hai làn đường dành cho xe cơ giới cùng chiều trở lên được phân biệt bằng vạch kẻ đường, xe đi phía sau di chuyển lên trước xe phía trước theo quy tắc sử dụng làn đường.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 39 -->
+<div class="question" data-answer="B">
+<p><b>Câu 39:</b> Người lái xe được phép vượt xe trên cầu hẹp có một làn đường, đường cong có tầm nhìn bị hạn chế hay không?</p>
+<label><input type="radio" name="q39" value="A"> A. Được phép vượt khi đường vắng.</label>
+<label><input type="radio" name="q39" value="B"> B. Không được phép vượt.</label>
+<label><input type="radio" name="q39" value="C"> C. Được phép vượt khi có việc gấp.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 40 -->
+<div class="question" data-answer="C">
+<p><b>Câu 40:</b> Muốn vượt xe phía trước, người lái xe mô tô phải có tín hiệu như thế nào dưới đây để bảo đảm an toàn?</p>
+<label><input type="radio" name="q40" value="A"> A. Bấm còi liên tục để xe phía trước biết xe mình xin vượt.</label>
+<label><input type="radio" name="q40" value="B"> B. Rú ga liên tục để xe phía trước biết xe mình xin vượt.</label>
+<label><input type="radio" name="q40" value="C"> C. Báo hiệu nhấp nháy bằng đèn chiếu sáng phía trước hoặc còi.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 41 -->
+<div class="question" data-answer="B">
+<p><b>Câu 41:</b> Khi lái xe trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh trừ các khu vực có biển cấm sử dụng còi, người lái xe được sử dụng còi trong thời gian nào?</p>
+<label><input type="radio" name="q41" value="A"> A. Từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau.</label>
+<label><input type="radio" name="q41" value="B"> B. Từ 05 giờ đến 22 giờ.</label>
+<label><input type="radio" name="q41" value="C"> C. Từ 23 giờ ngày hôm trước đến 05 giờ sáng hôm sau.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 42 -->
+<div class="question" data-answer="C">
+<p><b>Câu 42:</b> Người lái xe sử dụng đèn như thế nào khi đi trên các đoạn đường qua khu đông dân cư có hệ thống chiếu sáng đang hoạt động?</p>
+<label><input type="radio" name="q42" value="A"> A. Chỉ bật đèn chiếu xa (đèn pha).</label>
+<label><input type="radio" name="q42" value="B"> B. Bật đèn chiếu xa (đèn pha) khi đường vắng, bật đèn chiếu gần (đèn cốt) khi có xe đi ngược chiều.</label>
+<label><input type="radio" name="q42" value="C"> C. Chỉ bật đèn chiếu gần (đèn cốt).</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 43 -->
+<div class="question" data-answer="A">
+<p><b>Câu 43:</b> Khi điều khiển phương tiện tham gia giao thông, hành vi nào sau đây bị cấm?</p>
+<label><input type="radio" name="q43" value="A"> A. Dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khác.</label>
+<label><input type="radio" name="q43" value="B"> B. Chỉ được chở người trên thùng xe ô tô chở hàng trong trường hợp chở người đi làm nhiệm vụ cứu nạn, cứu hộ, phòng, chống thiên tai, dịch bệnh hoặc thực hiện nhiệm vụ khẩn cấp.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 44 -->
+<div class="question" data-answer="A">
+<p><b>Câu 44:</b> Người lái xe không được vượt xe khác khi gặp trường hợp nào dưới đây?</p>
+<label><input type="radio" name="q44" value="A"> A. Trên cầu hẹp có một làn đường; nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; khi gặp xe ưu tiên.</label>
+<label><input type="radio" name="q44" value="B"> B. Trên cầu có từ 02 làn xe trở lên.</label>
+<label><input type="radio" name="q44" value="C"> C. Trên đường có 02 làn đường được phân chia làn bằng vạch kẻ nét đứt.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 45 -->
+<div class="question" data-answer="C">
+<p><b>Câu 45:</b> Nơi nào cấm quay đầu xe?</p>
+<label><input type="radio" name="q45" value="A"> A. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, gầm cầu vượt, ngầm.</label>
+<label><input type="radio" name="q45" value="B"> B. Tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn đường cong tầm nhìn bị che khuất, trên đường cao tốc, trong hầm đường bộ, trên đường một chiều.</label>
+<label><input type="radio" name="q45" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 46 -->
+<div class="question" data-answer="D">
+<p><b>Câu 46:</b> Trước khi cho xe chuyển hướng, người lái xe phải làm gì để bảo đảm an toàn giao thông?</p>
+<label><input type="radio" name="q46" value="A"> A. Phải quan sát, bảo đảm khoảng cách an toàn với xe phía sau.</label>
+<label><input type="radio" name="q46" value="B"> B. Giảm tốc độ và có tín hiệu báo hướng rẽ.</label>
+<label><input type="radio" name="q46" value="C"> C. Chuyển dần sang làn gần nhất với hướng rẽ. Khi bảo đảm an toàn, không gây trở ngại cho người và phương tiện khác mới được chuyển hướng.</label>
+<label><input type="radio" name="q46" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 47 -->
+<div class="question" data-answer="B">
+<p><b>Câu 47:</b> Khi chuyển làn đường, người lái xe phải bật đèn tín hiệu báo rẽ như thế nào là đúng quy tắc giao thông?</p>
+<label><input type="radio" name="q47" value="A"> A. Khi bắt đầu chuyển làn đường.</label>
+<label><input type="radio" name="q47" value="B"> B. Trước khi thay đổi làn đường.</label>
+<label><input type="radio" name="q47" value="C"> C. Sau khi thay đổi làn đường.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 48 -->
+<div class="question" data-answer="C">
+<p><b>Câu 48:</b> Người điều khiển phương tiện tham gia giao thông không được dừng xe, đỗ xe ở những vị trí nào sau đây?</p>
+<label><input type="radio" name="q48" value="A"> A. Trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước.</label>
+<label><input type="radio" name="q48" value="B"> B. Trong phạm vi an toàn của đường sắt.</label>
+<label><input type="radio" name="q48" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 49 -->
+<div class="question" data-answer="D">
+<p><b>Câu 49:</b> Người điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?</p>
+<label><input type="radio" name="q49" value="A"> A. Được phép.</label>
+<label><input type="radio" name="q49" value="B"> B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.</label>
+<label><input type="radio" name="q49" value="C"> C. Tùy trường hợp.</label>
+<label><input type="radio" name="q49" value="D"> D. Không được phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 50 -->
+<div class="question" data-answer="A">
+<p><b>Câu 50:</b> Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào sau đây không được phép?</p>
+<label><input type="radio" name="q50" value="A"> A. Buông cả hai tay; đứng, nằm trên xe điều khiển xe; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy.</label>
+<label><input type="radio" name="q50" value="B"> B. Chở tối đa hai người phía sau khi chở người bệnh đi cấp cứu, áp giải người có hành vi vi phạm pháp luật, trẻ em dưới 12 tuổi và người già yếu hoặc người khuyết tật.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 51 -->
+<div class="question" data-answer="A">
+<p><b>Câu 51:</b> Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào sau đây không được phép?</p>
+<label><input type="radio" name="q51" value="A"> A. Buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy.</label>
+<label><input type="radio" name="q51" value="B"> B. Sử dụng xe để chở người hoặc hàng hóa; để chân chạm xuống đất khi khởi hành.</label>
+<label><input type="radio" name="q51" value="C"> C. Đội mũ bảo hiểm; chạy xe đúng tốc độ quy định và chấp hành đúng quy tắc giao thông đường bộ.</label>
+<label><input type="radio" name="q51" value="D"> D. Chở người ngồi sau dưới 16 tuổi.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 52 -->
+<div class="question" data-answer="D">
+<p><b>Câu 52:</b> Người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông đường bộ không được thực hiện hành vi nào sau đây?</p>
+<label><input type="radio" name="q52" value="A"> A. Mang, vác vật cồng kềnh.</label>
+<label><input type="radio" name="q52" value="B"> B. Bám, kéo hoặc đẩy các phương tiện khác.</label>
+<label><input type="radio" name="q52" value="C"> C. Dùng tay cầm điện thoại hoặc các thiết bị điện tử khác.</label>
+<label><input type="radio" name="q52" value="D"> D. Ý 1 và ý 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 53 -->
+<div class="question" data-answer="D">
+<p><b>Câu 53:</b> Người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông đường bộ có được bám, kéo hoặc đẩy các phương tiện khác không?</p>
+<label><input type="radio" name="q53" value="A"> A. Được phép.</label>
+<label><input type="radio" name="q53" value="B"> B. Được bám trong trường hợp phương tiện của mình bị hỏng.</label>
+<label><input type="radio" name="q53" value="C"> C. Được kéo, đẩy trong trường hợp phương tiện khác bị hỏng.</label>
+<label><input type="radio" name="q53" value="D"> D. Không được phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 54 -->
+<div class="question" data-answer="A">
+<p><b>Câu 54:</b> Người lái xe, người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy phải thực hiện quy định nào dưới đây?</p>
+<label><input type="radio" name="q54" value="A"> A. Đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách.</label>
+<label><input type="radio" name="q54" value="B"> B. Người lái xe phải đội mũ bảo hiểm, người được chở trên xe không nhất thiết phải đội mũ bảo hiểm.</label>
+<label><input type="radio" name="q54" value="C"> C. Phải đội mũ bảo hiểm nhưng không nhất thiết phải cài quai.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 55 -->
+<div class="question" data-answer="A">
+<p><b>Câu 55:</b> Người lái xe mô tô hai bánh, xe gắn máy được phép chở tối đa hai người trong những trường hợp nào?</p>
+<label><input type="radio" name="q55" value="A"> A. Chở người bệnh đi cấp cứu; áp giải người có hành vi vi phạm pháp luật; trẻ em dưới 12 tuổi; người già yếu hoặc người khuyết tật.</label>
+<label><input type="radio" name="q55" value="B"> B. Người đã uống rượu, bia; người trong cơ thể có chất ma tuý.</label>
+<label><input type="radio" name="q55" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 56 -->
+<div class="question" data-answer="D">
+<p><b>Câu 56:</b> Người lái xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy không được thực hiện các hành vi nào dưới đây?</p>
+<label><input type="radio" name="q56" value="A"> A. Đi xe dàn hàng ngang; buông cả hai tay.</label>
+<label><input type="radio" name="q56" value="B"> B. Sử dụng xe để kéo, đẩy xe khác, vật khác, dẫn dắt vật nuôi, mang, vác và chở vật cồng kềnh; chở người đứng trên xe, giá đèo hàng hoặc ngồi trên tay lái; xếp hàng hóa trên xe quá giới hạn quy định.</label>
+<label><input type="radio" name="q56" value="C"> C. Ngồi về một bên điều khiển xe; đứng, nằm trên xe điều khiển xe; thay người lái xe khi xe đang chạy; quay người về phía sau để điều khiển xe hoặc bịt mắt điều khiển xe; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy.</label>
+<label><input type="radio" name="q56" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 57 -->
+<div class="question" data-answer="C">
+<p><b>Câu 57:</b> Người lái xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy không được thực hiện các hành vi nào sau đây?</p>
+<label><input type="radio" name="q57" value="A"> A. Đi xe dàn hàng ngang; đi xe vào phần đường dành cho người đi bộ và phương tiện khác.</label>
+<label><input type="radio" name="q57" value="B"> B. Sử dụng ô, thiết bị âm thanh, trừ thiết bị trợ thính.</label>
+<label><input type="radio" name="q57" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 58 -->
+<div class="question" data-answer="B">
+<p><b>Câu 58:</b> Người lái xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy không được thực hiện hành vi nào sau đây?</p>
+<label><input type="radio" name="q58" value="A"> A. Đi trên phần đường, làn đường quy định, chấp hành hiệu lệnh của người điều khiển giao thông, đèn tín hiệu giao thông.</label>
+<label><input type="radio" name="q58" value="B"> B. Đi xe dàn hàng ngang, đi xe vào phần đường dành cho người đi bộ.</label>
+<label><input type="radio" name="q58" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 59 -->
+<div class="question" data-answer="C">
+<p><b>Câu 59:</b> Người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông đường bộ có được sử dụng ô khi trời mưa hay không?</p>
+<label><input type="radio" name="q59" value="A"> A. Được sử dụng.</label>
+<label><input type="radio" name="q59" value="B"> B. Chỉ người ngồi sau được sử dụng.</label>
+<label><input type="radio" name="q59" value="C"> C. Không được sử dụng.</label>
+<label><input type="radio" name="q59" value="D"> D. Được sử dụng nếu không có áo mưa.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 60 -->
+<div class="question" data-answer="B">
+<p><b>Câu 60:</b> Người được chở trên xe mô tô có được kéo theo người đang điều khiển xe đạp hay không?</p>
+<label><input type="radio" name="q60" value="A"> A. Chỉ được phép nếu cả hai đội mũ bảo hiểm.</label>
+<label><input type="radio" name="q60" value="B"> B. Không được phép.</label>
+<label><input type="radio" name="q60" value="C"> C. Chỉ được thực hiện trên đường vắng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 61 -->
+<div class="question" data-answer="D">
+<p><b>Câu 61:</b> Trường hợp người được chở trên xe mô tô, xe gắn máy, các loại xe tương tự ... không đội mũ bảo hiểm hoặc không cài quai đúng quy cách (trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật) thì việc xử phạt vi phạm hành chính được quy định như thế nào?</p>
+<label><input type="radio" name="q61" value="A"> A. Không bị xử phạt chỉ bị nhắc nhở.</label>
+<label><input type="radio" name="q61" value="B"> B. Người được chở không bị xử phạt, chỉ xử phạt người điều khiển xe mô tô, xe gắn máy.</label>
+<label><input type="radio" name="q61" value="C"> C. Người được chở bị xử phạt, không xử phạt người điều khiển xe mô tô, xe gắn máy.</label>
+<label><input type="radio" name="q61" value="D"> D. Xử phạt cả người điều khiển và người được chở trên xe mô tô, xe gắn máy.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 62 -->
+<div class="question" data-answer="A">
+<p><b>Câu 62:</b> Trong các trường hợp dưới đây, để bảo đảm an toàn khi tham gia giao thông, người lái xe mô tô cần thực hiện như thế nào?</p>
+<label><input type="radio" name="q62" value="A"> A. Phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách, không sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính).</label>
+<label><input type="radio" name="q62" value="B"> B. Phải đội mũ bảo hiểm khi trời mưa gió hoặc trời quá nắng; có thể sử dụng ô, điện thoại di động, thiết bị âm thanh nhưng phải bảo đảm an toàn.</label>
+<label><input type="radio" name="q62" value="C"> C. Phải đội mũ bảo hiểm khi cảm thấy mất an toàn giao thông hoặc khi chuẩn bị di chuyển quãng đường xa.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 63 -->
+<div class="question" data-answer="B">
+<p><b>Câu 63:</b> Thứ tự xuống phà như thế nào là đúng quy tắc giao thông?</p>
+<label><input type="radio" name="q63" value="A"> A. Xe thô sơ, người đi bộ xuống trước, xe cơ giới, xe máy chuyên dùng xuống sau.</label>
+<label><input type="radio" name="q63" value="B"> B. Xe cơ giới, xe máy chuyên dùng xuống trước, xe thô sơ, người đi bộ xuống sau.</label>
+<label><input type="radio" name="q63" value="C"> C. Xe cơ giới, xe thô sơ xuống trước, xe máy chuyên dùng, người đi bộ xuống sau.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 64 -->
+<div class="question" data-answer="C">
+<p><b>Câu 64:</b> Khi lái xe trong đô thị và khu đông dân cư trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau, nếu cần vượt một xe khác, người lái xe phải báo hiệu như thế nào là đúng quy tắc giao thông?</p>
+<label><input type="radio" name="q64" value="A"> A. Chỉ được báo hiệu bằng còi.</label>
+<label><input type="radio" name="q64" value="B"> B. Phải báo hiệu bằng cả còi và đèn.</label>
+<label><input type="radio" name="q64" value="C"> C. Chỉ được báo hiệu bằng đèn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 65 -->
+<div class="question" data-answer="B">
+<p><b>Câu 65:</b> Khi điều khiển xe chạy trên đường, biết có xe sau xin vượt, nếu đủ điều kiện an toàn người điều khiển phương tiện phải làm gì?</p>
+<label><input type="radio" name="q65" value="A"> A. Tăng tốc độ và ra hiệu cho xe sau vượt, không được gây trở ngại cho xe xin vượt.</label>
+<label><input type="radio" name="q65" value="B"> B. Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.</label>
+<label><input type="radio" name="q65" value="C"> C. Cho xe đi sát về bên trái của phần đường xe chạy và ra hiệu cho xe sau vượt, không được gây trở ngại cho xe xin vượt.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 66 -->
+<div class="question" data-answer="A">
+<p><b>Câu 66:</b> Trên đường không phân chia thành hai chiều xe chạy riêng biệt, người điều khiển phương tiện tham gia giao thông đường bộ phải tránh xe đi ngược chiều như thế nào để bảo đảm an toàn?</p>
+<label><input type="radio" name="q66" value="A"> A. Giảm tốc độ và cho xe đi về bên phải theo chiều xe chạy của mình.</label>
+<label><input type="radio" name="q66" value="B"> B. Một trong hai xe phải dừng lại cho xe kia đi qua mới được đi.</label>
+<label><input type="radio" name="q66" value="C"> C. Tăng tốc độ, cho xe đi về bên phải theo chiều xe chạy của mình để nhanh chóng vượt qua.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 67 -->
+<div class="question" data-answer="D">
+<p><b>Câu 67:</b> Khi tránh xe đi ngược chiều, các xe phải nhường đường như thế nào là đúng quy tắc giao thông?</p>
+<label><input type="radio" name="q67" value="A"> A. Nơi đường hẹp chỉ đủ cho một xe chạy và có chỗ tránh xe thì xe nào ở gần chỗ tránh hơn phải vào vị trí tránh, nhường đường cho xe đi ngược chiều.</label>
+<label><input type="radio" name="q67" value="B"> B. Xe xuống dốc phải nhường đường cho xe lên dốc.</label>
+<label><input type="radio" name="q67" value="C"> C. Xe có chướng ngại vật phía trước phải nhường đường cho xe không có chướng ngại vật phía trước.</label>
+<label><input type="radio" name="q67" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 68 -->
+<div class="question" data-answer="A">
+<p><b>Câu 68:</b> Người lái xe phải làm gì để bảo đảm an toàn khi lái xe trên đường cong có tầm nhìn bị hạn chế?</p>
+<label><input type="radio" name="q68" value="A"> A. Quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn.</label>
+<label><input type="radio" name="q68" value="B"> B. Đi sang làn đường của xe ngược chiều để mở rộng tầm nhìn và vượt xe khác.</label>
+<label><input type="radio" name="q68" value="C"> C. Cho xe đi sát bên phải làn đường, bật tín hiệu báo hiệu để vượt bên phải xe khác.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 69 -->
+<div class="question" data-answer="C">
+<p><b>Câu 69:</b> Tại nơi đường giao nhau, người lái xe đang đi trên đường không ưu tiên, đường nhánh phải nhường đường như thế nào là đúng quy tắc giao thông?</p>
+<label><input type="radio" name="q69" value="A"> A. Nhường đường cho xe đi ở bên phải mình tới.</label>
+<label><input type="radio" name="q69" value="B"> B. Nhường đường cho xe đi ở bên trái mình tới.</label>
+<label><input type="radio" name="q69" value="C"> C. Nhường đường cho xe đi trên đường ưu tiên hoặc đường chính từ bất kỳ hướng nào tới.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 70 -->
+<div class="question" data-answer="B">
+<p><b>Câu 70:</b> Tại nơi đường giao nhau có báo hiệu đi theo vòng xuyến, người lái xe phải nhường đường như thế nào là đúng quy tắc giao thông?</p>
+<label><input type="radio" name="q70" value="A"> A. Nhường đường cho xe đi đến từ bên phải.</label>
+<label><input type="radio" name="q70" value="B"> B. Nhường đường cho xe đi đến từ bên trái.</label>
+<label><input type="radio" name="q70" value="C"> C. Không phải nhường đường.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 71 -->
+<div class="question" data-answer="A">
+<p><b>Câu 71:</b> Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, người điều khiển phương tiện phải nhường đường như thế nào là đúng quy tắc giao thông?</p>
+<label><input type="radio" name="q71" value="A"> A. Phải nhường đường cho xe đi đến từ bên phải.</label>
+<label><input type="radio" name="q71" value="B"> B. Xe báo hiệu xin đường trước, xe đó được đi trước.</label>
+<label><input type="radio" name="q71" value="C"> C. Phải nhường đường cho xe đi đến từ bên trái.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 72 -->
+<div class="question" data-answer="B">
+<p><b>Câu 72:</b> Người lái xe phải nhanh chóng giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường cho các loại xe nào dưới đây?</p>
+<label><input type="radio" name="q72" value="A"> A. Xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác; xe của lực lượng quân sự, công an và kiểm sát; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương; xe hộ đê không có tín hiệu ưu tiên theo quy định.</label>
+<label><input type="radio" name="q72" value="B"> B. Xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực lượng quân sự, công an và kiểm sát đi làm nhiệm vụ khẩn cấp; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương đi làm nhiệm vụ cấp cứu; xe hộ đê đi làm nhiệm vụ; xe đi làm nhiệm vụ cứu nạn, cứu hộ, khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật; đoàn xe tang.</label>
+<label><input type="radio" name="q72" value="C"> C. Xe ô tô, xe máy, đoàn xe đang diễu hành có tổ chức có báo tín hiệu xin vượt bằng còi và đèn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 73 -->
+<div class="question" data-answer="A">
+<p><b>Câu 73:</b> Khi có tín hiệu của xe ưu tiên, người và phương tiện tham gia giao thông đường bộ phải tuân thủ quy định nào dưới đây?</p>
+<label><input type="radio" name="q73" value="A"> A. Giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường.</label>
+<label><input type="radio" name="q73" value="B"> B. Tăng tốc độ và đi sát lề đường bên phải để nhường đường.</label>
+<label><input type="radio" name="q73" value="C"> C. Giảm tốc độ, đi sát lề đường bên trái để nhường đường.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 74 -->
+<div class="question" data-answer="C">
+<p><b>Câu 74:</b> Khi đang lái xe, phía trước có một xe Cảnh sát giao thông không phát tín hiệu ưu tiên, người lái xe có được phép vượt hay không?</p>
+<label><input type="radio" name="q74" value="A"> A. Không được vượt.</label>
+<label><input type="radio" name="q74" value="B"> B. Được phép vượt ở phần đường dành cho người đi bộ qua đường.</label>
+<label><input type="radio" name="q74" value="C"> C. Được vượt khi bảo đảm an toàn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 75 -->
+<div class="question" data-answer="A">
+<p><b>Câu 75:</b> Khi đang lái xe, phía trước có một xe cứu thương đang phát tín hiệu ưu tiên, người lái xe có được phép vượt hay không?</p>
+<label><input type="radio" name="q75" value="A"> A. Không được vượt.</label>
+<label><input type="radio" name="q75" value="B"> B. Được vượt khi đang đi trên cầu.</label>
+<label><input type="radio" name="q75" value="C"> C. Được phép vượt khi đi qua nơi giao nhau có ít phương tiện cùng tham gia giao thông.</label>
+<label><input type="radio" name="q75" value="D"> D. Được vượt khi bảo đảm an toàn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 76 -->
+<div class="question" data-answer="A">
+<p><b>Câu 76:</b> Khi tới đường ngang không có người gác, chắn đường bộ, chuông, đèn tín hiệu, người tham gia giao thông đường bộ phải làm gì để bảo đảm an toàn?</p>
+<label><input type="radio" name="q76" value="A"> A. Dừng lại về bên phải đường của mình, trước vạch dừng xe và quan sát hai phía, khi không có phương tiện giao thông đường sắt tới mới được đi qua.</label>
+<label><input type="radio" name="q76" value="B"> B. Quan sát hai phía, khi không có phương tiện giao thông đường sắt tới thì nhanh chóng đi qua.</label>
+<label><input type="radio" name="q76" value="C"> C. Dừng lại khoảng cách tối thiểu 3 mét tính từ ray đường sắt gần nhất, khi không có phương tiện giao thông đường sắt tới thì nhanh chóng đi qua.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 77 -->
+<div class="question" data-answer="C">
+<p><b>Câu 77:</b> Tại đường ngang, cầu chung đường sắt, khi có hiệu lệnh của nhân viên gác chắn, đèn đỏ sáng nhấp nháy, chuông kêu, chắn đường bộ đang dịch chuyển hoặc đã đóng, người tham gia giao thông đường bộ phải làm gì để bảo đảm an toàn?</p>
+<label><input type="radio" name="q77" value="A"> A. Dừng lại về bên trái đường của mình, trước vạch dừng xe.</label>
+<label><input type="radio" name="q77" value="B"> B. Dừng lại giữa đường của mình, trước vạch dừng xe.</label>
+<label><input type="radio" name="q77" value="C"> C. Dừng lại về bên phải đường của mình, trước vạch dừng xe.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 78 -->
+<div class="question" data-answer="D">
+<p><b>Câu 78:</b> Người tham gia giao thông đường bộ phải dừng lại về bên phải đường của mình trước vạch dừng xe tại đường ngang, cầu chung đường sắt khi có báo hiệu nào dưới đây?</p>
+<label><input type="radio" name="q78" value="A"> A. Hiệu lệnh của nhân viên gác chắn.</label>
+<label><input type="radio" name="q78" value="B"> B. Đèn đỏ sáng nhấp nháy, chuông kêu.</label>
+<label><input type="radio" name="q78" value="C"> C. Chắn đường bộ đang dịch chuyển hoặc đã đóng.</label>
+<label><input type="radio" name="q78" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 79 -->
+<div class="question" data-answer="A">
+<p><b>Câu 79:</b> Người điều khiển phương tiện tham gia giao thông trong hầm đường bộ ngoài việc phải tuân thủ các quy tắc giao thông còn phải thực hiện những quy định nào dưới đây?</p>
+<label><input type="radio" name="q79" value="A"> A. Xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu gần; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu; không dừng xe, đỗ xe trong hầm đường bộ; trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải dừng xe, đỗ xe, người lái xe, người điều khiển xe máy chuyên dùng phải đưa xe vào vị trí dừng xe, đỗ xe khẩn cấp, nếu không di chuyển được, phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách bảo đảm an toàn.</label>
+<label><input type="radio" name="q79" value="B"> B. Xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu xa; được dừng xe, đỗ xe khi cần thiết.</label>
+<label><input type="radio" name="q79" value="C"> C. Phải cho xe chạy trên một làn đường và chỉ chuyển làn ở nơi được phép; được quay đầu xe, lùi xe khi cần thiết.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 80 -->
+<div class="question" data-answer="D">
+<p><b>Câu 80:</b> Người điều khiển phương tiện tham gia giao thông đường bộ phải quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn trong các trường hợp nào dưới đây?</p>
+<label><input type="radio" name="q80" value="A"> A. Có báo hiệu cảnh báo nguy hiểm hoặc có chướng ngại vật trên đường; chuyển hướng xe chạy hoặc tầm nhìn bị hạn chế.</label>
+<label><input type="radio" name="q80" value="B"> B. Nơi cầu, cống hẹp, đập tràn, đường ngầm, hầm chui, hầm đường bộ; có vật nuôi đi trên đường hoặc chăn thả ở ven đường.</label>
+<label><input type="radio" name="q80" value="C"> C. Điểm dừng xe, đỗ xe trên đường bộ có khách đang lên, xuống xe.</label>
+<label><input type="radio" name="q80" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 81 -->
+<div class="question" data-answer="A">
+<p><b>Câu 81:</b> Người lái xe được phép vượt xe khác về bên phải trong trường hợp nào dưới đây?</p>
+<label><input type="radio" name="q81" value="A"> A. Xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái.</label>
+<label><input type="radio" name="q81" value="B"> B. Xe phía trước đang đi sát lề đường bên trái.</label>
+<label><input type="radio" name="q81" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 82 -->
+<div class="question" data-answer="A">
+<p><b>Câu 82:</b> Khi có xe xin vượt, người lái xe mô tô xử lý như thế nào nếu đủ điều kiện an toàn cho xe phía sau vượt?</p>
+<label><input type="radio" name="q82" value="A"> A. Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.</label>
+<label><input type="radio" name="q82" value="B"> B. Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt.</label>
+<label><input type="radio" name="q82" value="C"> C. Tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 83 -->
+<div class="question" data-answer="A">
+<p><b>Câu 83:</b> Những trường hợp nào dưới đây không được đi trên đường cao tốc, trừ người, phương tiện giao thông đường bộ và thiết bị phục vụ việc quản lý, bảo trì đường cao tốc?</p>
+<label><input type="radio" name="q83" value="A"> A. Xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ, xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô, xe gắn máy, xe thô sơ, người đi bộ.</label>
+<label><input type="radio" name="q83" value="B"> B. Xe máy chuyên dùng có tốc độ thiết kế lớn hơn tốc độ tối thiểu quy định đối với đường cao tốc.</label>
+<label><input type="radio" name="q83" value="C"> C. Xe ô tô và xe máy chuyên dùng có tốc độ thiết kế lớn hơn 80 km/h.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 84 -->
+<div class="question" data-answer="C">
+<p><b>Câu 84:</b> Theo quy định về độ tuổi, người đủ bao nhiêu tuổi trở lên thì được cấp giấy phép lái xe mô tô hai bánh có dung tích xi lanh đến 125 cm3 và xe ô tô chở người đến 8 chỗ (không kể chỗ của người lái xe); xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế đến 3.500 kg?</p>
+<label><input type="radio" name="q84" value="A"> A. 16 tuổi.</label>
+<label><input type="radio" name="q84" value="B"> B. 17 tuổi.</label>
+<label><input type="radio" name="q84" value="C"> C. 18 tuổi.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 85 -->
+<div class="question" data-answer="B">
+<p><b>Câu 85:</b> Người đủ 16 tuổi đến dưới 18 tuổi chỉ được điều khiển các loại xe nào dưới đây?</p>
+<label><input type="radio" name="q85" value="A"> A. Xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3.</label>
+<label><input type="radio" name="q85" value="B"> B. Xe gắn máy.</label>
+<label><input type="radio" name="q85" value="C"> C. Xe ô tô chở người đến 08 chỗ (không kể chỗ của người lái xe); xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế đến 3.500 kg; các loại xe ô tô quy định cho giấy phép lái xe hạng B kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg.</label>
+<label><input type="radio" name="q85" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 86 -->
+<div class="question" data-answer="B">
+<p><b>Câu 86:</b> Người có Giấy phép lái xe mô tô hạng A1 không được phép điều khiển loại xe nào dưới đây?</p>
+<label><input type="radio" name="q86" value="A"> A. Xe mô tô hai bánh có dung tích xi-lanh 125 cm3 hoặc có công suất động cơ điện đến 11 kW.</label>
+<label><input type="radio" name="q86" value="B"> B. Xe mô tô ba bánh.</label>
+<label><input type="radio" name="q86" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 87 -->
+<div class="question" data-answer="A">
+<p><b>Câu 87:</b> Người có Giấy phép lái xe mô tô hạng A1 được cấp sau ngày 01/01/2025 được phép điều khiển loại xe nào dưới đây?</p>
+<label><input type="radio" name="q87" value="A"> A. Xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW.</label>
+<label><input type="radio" name="q87" value="B"> B. Xe mô tô ba bánh.</label>
+<label><input type="radio" name="q87" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 88 -->
+<div class="question" data-answer="C">
+<p><b>Câu 88:</b> Người có Giấy phép lái xe mô tô hạng A được phép điều khiển loại xe nào dưới đây?</p>
+<label><input type="radio" name="q88" value="A"> A. Xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW.</label>
+<label><input type="radio" name="q88" value="B"> B. Xe mô tô hai bánh có dung tích xi-lanh trên 125 cm3 hoặc có công suất động cơ điện trên 11 kW.</label>
+<label><input type="radio" name="q88" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 89 -->
+<div class="question" data-answer="A">
+<p><b>Câu 89:</b> Người lái xe khi tham gia giao thông đường bộ phải đảm bảo các điều kiện nào dưới đây?</p>
+<label><input type="radio" name="q89" value="A"> A. Phải đủ tuổi, sức khỏe theo quy định của pháp luật; có giấy phép lái xe đang còn điểm, còn hiệu lực phù hợp với loại xe đang điều khiển do cơ quan có thẩm quyền cấp (trừ người lái xe gắn máy).</label>
+<label><input type="radio" name="q89" value="B"> B. Phải là người đứng tên trong đăng ký xe.</label>
+<label><input type="radio" name="q89" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 90 -->
+<div class="question" data-answer="D">
+<p><b>Câu 90:</b> Khi tham gia giao thông đường bộ, người lái xe phải mang theo các giấy tờ gì?</p>
+<label><input type="radio" name="q90" value="A"> A. Chứng nhận đăng ký xe hoặc bản sao Chứng nhận đăng ký xe có chứng thực kèm bản gốc giấy tờ xác nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài còn hiệu lực trong trường hợp xe đang được thế chấp tại tổ chức tín dụng, chi nhánh ngân hàng nước ngoài.</label>
+<label><input type="radio" name="q90" value="B"> B. Giấy phép lái xe phù hợp với loại xe đang điều khiển; chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới theo quy định của pháp luật; chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới.</label>
+<label><input type="radio" name="q90" value="C"> C. Trường hợp các giấy tờ nêu trên đã được tích hợp vào tài khoản định danh điện tử thì việc xuất trình, kiểm tra có thể thực hiện thông qua tài khoản định danh điện tử.</label>
+<label><input type="radio" name="q90" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 91 -->
+<div class="question" data-answer="B">
+<p><b>Câu 91:</b> Người có giấy phép lái xe chưa bị trừ hết 12 điểm, được phục hồi điểm giấy phép lái xe trong trường hợp nào sau đây?</p>
+<label><input type="radio" name="q91" value="A"> A. Không được phục hồi.</label>
+<label><input type="radio" name="q91" value="B"> B. Được phục hồi đủ 12 điểm, nếu không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 92 -->
+<div class="question" data-answer="B">
+<p><b>Câu 92:</b> Người có giấy phép lái xe đã bị trừ hết điểm phải làm gì để phục hồi điểm giấy phép lái xe?</p>
+<label><input type="radio" name="q92" value="A"> A. Không vi phạm pháp luật trật tự, an toàn giao thông đường bộ trong thời gian 12 tháng kể từ ngày bị trừ hết điểm.</label>
+<label><input type="radio" name="q92" value="B"> B. Sau thời hạn ít nhất là 06 tháng kể từ ngày bị trừ hết điểm, người có phép lái xe được tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ theo quy định, có kết quả đạt yêu cầu thì được phục hồi đủ 12 điểm.</label>
+<label><input type="radio" name="q92" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 93 -->
+<div class="question" data-answer="A">
+<p><b>Câu 93:</b> Trách nhiệm của tổ chức, cá nhân đứng tên trong giấy chứng nhận đăng ký xe khi chưa thực hiện thu hồi chứng nhận đăng ký xe, biển số xe được quy định như thế nào?</p>
+<label><input type="radio" name="q93" value="A"> A. Tiếp tục chịu trách nhiệm của chủ xe.</label>
+<label><input type="radio" name="q93" value="B"> B. Không chịu trách nhiệm sau khi đã chuyển nhượng, trao đổi, tặng, cho.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 94 -->
+<div class="question" data-answer="A">
+<p><b>Câu 94:</b> Trên đường bộ, trong khu vực đông dân cư, đường đôi hoặc đường một chiều có từ hai làn xe cơ giới trở lên, xe mô tô hai bánh, ô tô chở người đến 28 chỗ không kể chỗ của người lái xe tham gia giao thông với tốc độ khai thác tối đa cho phép là bao nhiêu?</p>
+<label><input type="radio" name="q94" value="A"> A. 60 km/h.</label>
+<label><input type="radio" name="q94" value="B"> B. 50 km/h.</label>
+<label><input type="radio" name="q94" value="C"> C. 40 km/h.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 95 -->
+<div class="question" data-answer="B">
+<p><b>Câu 95:</b> Trên đường bộ (trừ đường cao tốc) trong khu vực đông dân cư, đường hai chiều hoặc đường một chiều có một làn xe cơ giới, xe mô tô hai bánh, ô tô chở người đến 28 chỗ không kể chỗ của người lái xe tham gia giao thông với tốc độ khai thác tối đa cho phép là bao nhiêu?</p>
+<label><input type="radio" name="q95" value="A"> A. 60 km/h.</label>
+<label><input type="radio" name="q95" value="B"> B. 50 km/h.</label>
+<label><input type="radio" name="q95" value="C"> C. 40 km/h.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 96 -->
+<div class="question" data-answer="C">
+<p><b>Câu 96:</b> Trên đường bộ ngoài khu vực đông dân cư, đường đôi hoặc đường một chiều có từ hai làn xe cơ giới trở lên (trừ đường cao tốc) loại xe nào dưới đây được tham gia giao thông với tốc độ khai thác tối đa cho phép là 70 km/h?</p>
+<label><input type="radio" name="q96" value="A"> A. Xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn.</label>
+<label><input type="radio" name="q96" value="B"> B. Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).</label>
+<label><input type="radio" name="q96" value="C"> C. Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).</label>
+<label><input type="radio" name="q96" value="D"> D. Ô tô kéo rơ moóc; ô tô kéo xe khác; ô tô trộn vữa, ô tô trộn bê tông lưu động, ô tô xi téc, ô tô đầu kéo kéo sơ mi rơ moóc xi téc, ô tô kéo theo rơ moóc xi téc.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 97 -->
+<div class="question" data-answer="C">
+<p><b>Câu 97:</b> Trên đường bộ ngoài khu vực đông dân cư, đường hai chiều hoặc đường một chiều có một làn xe cơ giới (trừ đường cao tốc), loại xe nào dưới đây được tham gia giao thông với tốc độ khai thác tối đa cho phép là 60 km/h?</p>
+<label><input type="radio" name="q97" value="A"> A. Xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn.</label>
+<label><input type="radio" name="q97" value="B"> B. Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).</label>
+<label><input type="radio" name="q97" value="C"> C. Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).</label>
+<label><input type="radio" name="q97" value="D"> D. Ô tô kéo rơ moóc; ô tô kéo xe khác; ô tô trộn vữa, ô tô trộn bê tông lưu động, ô tô xi téc, ô tô đầu kéo kéo sơ mi rơ moóc xi téc, ô tô kéo theo rơ moóc xi téc.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 98 -->
+<div class="question" data-answer="A">
+<p><b>Câu 98:</b> Người lái xe phải giảm tốc độ thấp hơn tốc độ tối đa cho phép đến mức cần thiết, chú ý quan sát và chuẩn bị sẵn sàng những tình huống có thể xảy ra để phòng ngừa tai nạn trong các trường hợp nào dưới đây?</p>
+<label><input type="radio" name="q98" value="A"> A. Gặp biển báo nguy hiểm và cảnh báo trên đường.</label>
+<label><input type="radio" name="q98" value="B"> B. Gặp biển chỉ dẫn trên đường.</label>
+<label><input type="radio" name="q98" value="C"> C. Gặp biển báo hết mọi lệnh cấm.</label>
+<label><input type="radio" name="q98" value="D"> D. Gặp biển báo hết hạn chế tốc độ tối đa cho phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 99 -->
+<div class="question" data-answer="B">
+<p><b>Câu 99:</b> Khi gặp xe buýt đang dừng đón, trả khách, người điều khiển xe mô tô phải xử lý như thế nào dưới đây?</p>
+<label><input type="radio" name="q99" value="A"> A. Tăng tốc độ để nhanh chóng vượt qua xe buýt.</label>
+<label><input type="radio" name="q99" value="B"> B. Quan sát, giảm tốc độ đi qua xe buýt hoặc dừng lại để bảo đảm an toàn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 100 -->
+<div class="question" data-answer="C">
+<p><b>Câu 100:</b> Việc sử dụng xe mô tô, xe gắn máy, xe thô sơ để vận chuyển hành khách, hàng hóa phải thực hiện các quy định nào dưới đây để đảm bảo an toàn giao thông?</p>
+<label><input type="radio" name="q100" value="A"> A. Kiểm tra điều kiện bảo đảm an toàn của xe trước khi tham gia giao thông đường bộ; mang đủ giấy tờ theo quy định của pháp luật.</label>
+<label><input type="radio" name="q100" value="B"> B. Kiểm tra việc sắp xếp hàng hóa bảo đảm an toàn; không chở quá số người, chở hành lý, hàng hoá vượt quá khối lượng cho phép hoặc vượt quá khổ giới hạn của xe.</label>
+<label><input type="radio" name="q100" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 101 -->
+<div class="question" data-answer="A">
+<p><b>Câu 101:</b> Những hành vi nào sau đây thể hiện là người có văn hóa giao thông?</p>
+<label><input type="radio" name="q101" value="A"> A. Luôn tuân thủ pháp luật về trật tự, an toàn giao thông đường bộ, nhường nhịn và giúp đỡ người khác.</label>
+<label><input type="radio" name="q101" value="B"> B. Đi nhanh, vượt đèn đỏ nếu không có lực lượng Công an.</label>
+<label><input type="radio" name="q101" value="C"> C. Bấm còi và nháy đèn liên tục để cảnh báo xe khác.</label>
+<label><input type="radio" name="q101" value="D"> D. Tránh nhường đường để đi nhanh hơn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 102 -->
+<div class="question" data-answer="C">
+<p><b>Câu 102:</b> Khái niệm về văn hóa giao thông được hiểu như thế nào là đúng?</p>
+<label><input type="radio" name="q102" value="A"> A. Là sự hiểu biết và chấp hành nghiêm chỉnh pháp luật về giao thông, là ý thức trách nhiệm với cộng đồng khi tham gia giao thông.</label>
+<label><input type="radio" name="q102" value="B"> B. Là sự tôn trọng, nhường nhịn, giúp đỡ và ứng xử có văn hóa giữa những người tham gia giao thông với nhau.</label>
+<label><input type="radio" name="q102" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 103 -->
+<div class="question" data-answer="A">
+<p><b>Câu 103:</b> Người lái xe không điều khiển xe đi đúng làn đường quy định, phóng nhanh, vượt ẩu, vượt đèn đỏ, đi vào đường cấm được coi là hành vi nào trong các hành vi dưới đây?</p>
+<label><input type="radio" name="q103" value="A"> A. Là thiếu văn hóa giao thông, vi phạm pháp luật về trật tự, an toàn giao thông đường bộ.</label>
+<label><input type="radio" name="q103" value="B"> B. Là thiếu văn hóa giao thông.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 104 -->
+<div class="question" data-answer="A">
+<p><b>Câu 104:</b> Người lái xe có văn hóa giao thông khi tham gia giao thông đường bộ phải đáp ứng các điều kiện nào dưới đây?</p>
+<label><input type="radio" name="q104" value="A"> A. Hiểu biết và chấp hành nghiêm chỉnh pháp luật về giao thông đường bộ; có ý thức trách nhiệm với cộng đồng khi tham gia giao thông; tôn trọng, nhường nhịn, giúp đỡ và ứng xử có văn hóa với những người cùng tham gia giao thông.</label>
+<label><input type="radio" name="q104" value="B"> B. Điều khiển xe vượt quá tốc độ, đi không đúng làn đường.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 105 -->
+<div class="question" data-answer="A">
+<p><b>Câu 105:</b> Người lái xe mô tô có văn hóa giao thông khi tham gia giao thông phải tuân thủ những quy định nào dưới đây?</p>
+<label><input type="radio" name="q105" value="A"> A. Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; đội mũ bảo hiểm đúng quy chuẩn kỹ thuật quốc gia, cài quai đúng quy cách.</label>
+<label><input type="radio" name="q105" value="B"> B. Điều khiển xe đi trên phần đường, làn đường có ít phương tiện tham gia giao thông.</label>
+<label><input type="radio" name="q105" value="C"> C. Điều khiển xe và đội mũ bảo hiểm ở nơi có biển báo bắt buộc đội mũ bảo hiểm.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 106 -->
+<div class="question" data-answer="A">
+<p><b>Câu 106:</b> Trong các hành vi dưới đây, người lái xe có văn hóa giao thông phải ứng xử như thế nào?</p>
+<label><input type="radio" name="q106" value="A"> A. Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; dừng, đỗ xe đúng nơi quy định; đã uống rượu, bia thì không lái xe.</label>
+<label><input type="radio" name="q106" value="B"> B. Điều khiển xe đi trên phần đường, làn đường có ít phương tiện giao thông; dừng xe, đỗ xe ở nơi thuận tiện hoặc theo yêu cầu của hành khách, của người thân.</label>
+<label><input type="radio" name="q106" value="C"> C. Dừng và đỗ xe ở nơi thuận tiện cho việc chuyên chở hành khách và giao nhận hàng hóa; sử dụng ít rượu, bia thì có thể lái xe.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 107 -->
+<div class="question" data-answer="A">
+<p><b>Câu 107:</b> Khi tham gia giao thông việc sử dụng còi xe nên dùng như thế nào để thể hiện là người có văn hóa giao thông?</p>
+<label><input type="radio" name="q107" value="A"> A. Chỉ bấm còi khi thật sự cần thiết, không bấm còi liên tục hoặc kéo dài, sử dụng còi với mức âm lượng theo quy định.</label>
+<label><input type="radio" name="q107" value="B"> B. Bấm còi liên tục để các xe khác nhường đường.</label>
+<label><input type="radio" name="q107" value="C"> C. Bấm còi to khi đi qua khu vực đông dân cư.</label>
+<label><input type="radio" name="q107" value="D"> D. Không cần dùng còi, tránh gây tiếng ồn là văn minh.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 108 -->
+<div class="question" data-answer="D">
+<p><b>Câu 108:</b> Người điều khiển phương tiện tham gia giao thông đường bộ gây ra tai nạn giao thông đường bộ, người liên quan đến vụ tai nạn giao thông đường bộ có trách nhiệm gì dưới đây?</p>
+<label><input type="radio" name="q108" value="A"> A. Dừng ngay phương tiện, cảnh báo nguy hiểm, giữ nguyên hiện trường, trợ giúp người bị nạn và báo tin cho cơ quan Công an, cơ sở khám bệnh, chữa bệnh.</label>
+<label><input type="radio" name="q108" value="B"> B. Ở lại hiện trường vụ tai nạn giao thông đường bộ cho đến khi người của cơ quan Công an đến, trừ trường hợp phải đi cấp cứu, đưa người bị nạn đi cấp cứu hoặc xét thấy bị đe dọa đến tính mạng, sức khỏe nhưng phải đến trình báo ngay cơ quan Công an, Ủy ban nhân dân nơi gần nhất.</label>
+<label><input type="radio" name="q108" value="C"> C. Cung cấp thông tin xác định danh tính về bản thân, người liên quan đến vụ tai nạn giao thông đường bộ và thông tin liên quan của vụ tai nạn giao thông đường bộ cho cơ quan có thẩm quyền.</label>
+<label><input type="radio" name="q108" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 109 -->
+<div class="question" data-answer="A">
+<p><b>Câu 109:</b> Người có mặt tại nơi xảy ra vụ tai nạn giao thông đường bộ có trách nhiệm gì dưới đây?</p>
+<label><input type="radio" name="q109" value="A"> A. Giúp đỡ, cứu chữa kịp thời người bị nạn; báo tin ngay cho cơ quan Công an, cơ sở khám bệnh, chữa bệnh hoặc Ủy ban nhân dân nơi gần nhất; tham gia bảo vệ hiện trường; tham gia bảo vệ tài sản của người bị nạn; cung cấp thông tin liên quan về vụ tai nạn theo yêu cầu của cơ quan có thẩm quyền.</label>
+<label><input type="radio" name="q109" value="B"> B. Chụp lại hình ảnh vụ tai nạn (nếu có thiết bị ghi hình) và nhanh chóng rời khỏi hiện trường vụ tai nạn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 110 -->
+<div class="question" data-answer="C">
+<p><b>Câu 110:</b> Trong đoạn đường hai chiều tại khu đông dân cư đang ùn tắc, người điều khiển xe mô tô có văn hóa giao thông sẽ lựa chọn cách xử lý tình huống nào dưới đây?</p>
+<label><input type="radio" name="q110" value="A"> A. Cho xe lấn sang làn ngược chiều để nhanh chóng thoát khỏi nơi ùn tắc.</label>
+<label><input type="radio" name="q110" value="B"> B. Điều khiển xe trên vỉa hè để nhanh chóng thoát khỏi nơi ùn tắc.</label>
+<label><input type="radio" name="q110" value="C"> C. Kiên nhẫn tuân thủ hướng dẫn của người điều khiển giao thông hoặc tín hiệu đèn giao thông, di chuyển trên đúng phần đường bên phải theo chiều đi, nhường đường cho các phương tiện đi ngược chiều.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 111 -->
+<div class="question" data-answer="A">
+<p><b>Câu 111:</b> Khi điều khiển xe mô tô tay ga xuống đường dốc dài, độ dốc cao, người lái xe cần thực hiện các thao tác nào dưới đây để bảo đảm an toàn?</p>
+<label><input type="radio" name="q111" value="A"> A. Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ.</label>
+<label><input type="radio" name="q111" value="B"> B. Nhả hết tay ga, tắt động cơ, sử dụng phanh trước và phanh sau để giảm tốc độ.</label>
+<label><input type="radio" name="q111" value="C"> C. Sử dụng phanh trước để giảm tốc độ kết hợp với tắt chìa khóa điện của xe.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 112 -->
+<div class="question" data-answer="A">
+<p><b>Câu 112:</b> Khi điều khiển xe trên đường vòng người lái xe cần phải làm gì để bảo đảm an toàn?</p>
+<label><input type="radio" name="q112" value="A"> A. Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng còi, đèn; giảm tốc độ tới mức cần thiết, về số thấp và thực hiện quay vòng với tốc độ phù hợp với bán kính cong của đường vòng.</label>
+<label><input type="radio" name="q112" value="B"> B. Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng còi, đèn; tăng tốc để nhanh chóng qua đường vòng và giảm tốc độ sau khi qua đường vòng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 113 -->
+<div class="question" data-answer="C">
+<p><b>Câu 113:</b> Khi điều khiển xe qua đường sắt, người lái xe cần phải thực hiện các thao tác nào dưới đây để bảo đảm an toàn?</p>
+<label><input type="radio" name="q113" value="A"> A. Khi có chuông báo hoặc thanh chắn đã hạ xuống, người lái xe phải dừng xe tạm thời đúng khoảng cách an toàn, kéo phanh tay nếu đường dốc hoặc phải chờ lâu.</label>
+<label><input type="radio" name="q113" value="B"> B. Khi không có chuông báo hoặc thanh chắn không hạ xuống, người lái xe cần phải quan sát nếu thấy đủ điều kiện an toàn thì về số thấp, tăng ga nhẹ và không thay đổi số trong quá trình vượt qua đường sắt để tránh động cơ chết máy cho xe vượt qua.</label>
+<label><input type="radio" name="q113" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 114 -->
+<div class="question" data-answer="B">
+<p><b>Câu 114:</b> Trong các loại nhiên liệu dưới đây, loại nhiên liệu nào giảm thiểu ô nhiễm môi trường?</p>
+<label><input type="radio" name="q114" value="A"> A. Xăng và dầu diesel.</label>
+<label><input type="radio" name="q114" value="B"> B. Xăng sinh học và khí sinh học.</label>
+<label><input type="radio" name="q114" value="C"> C. Ý 1 và ý 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 115 -->
+<div class="question" data-answer="C">
+<p><b>Câu 115:</b> Các biện pháp tiết kiệm nhiên liệu khi chạy xe?</p>
+<label><input type="radio" name="q115" value="A"> A. Bảo dưỡng xe theo định kỳ và có kế hoạch lộ trình trước khi xe chạy.</label>
+<label><input type="radio" name="q115" value="B"> B. Kiểm tra áp suất lốp theo quy định và chạy xe với tốc độ phù hợp với tình trạng mặt đường và mật độ giao thông trên đường.</label>
+<label><input type="radio" name="q115" value="C"> C. Cả hai ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 116 -->
+<div class="question" data-answer="B">
+<p><b>Câu 116:</b> Khi tầm nhìn bị hạn chế bởi sương mù hoặc mưa to, người lái xe phải thực hiện các thao tác nào để bảo đảm an toàn?</p>
+<label><input type="radio" name="q116" value="A"> A. Tăng tốc độ, chạy gần xe trước, nhìn đèn hậu để định hướng.</label>
+<label><input type="radio" name="q116" value="B"> B. Giảm tốc độ, chạy cách xa xe trước với khoảng cách an toàn, bật đèn sương mù và đèn chiếu gần.</label>
+<label><input type="radio" name="q116" value="C"> C. Tăng tốc độ, bật đèn pha vượt qua xe chạy trước.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 117 -->
+<div class="question" data-answer="A">
+<p><b>Câu 117:</b> Khi đèn pha của xe đi ngược chiều gây chói mắt, làm giảm khả năng quan sát trên đường, người lái xe xử lý như thế nào dưới đây để bảo đảm an toàn?</p>
+<label><input type="radio" name="q117" value="A"> A. Giảm tốc độ, giữ vững tay lái, nhìn chếch sang lề đường bên phải.</label>
+<label><input type="radio" name="q117" value="B"> B. Bật đèn pha chiếu xa và giữ nguyên tốc độ.</label>
+<label><input type="radio" name="q117" value="C"> C. Tăng tốc độ, bật đèn pha đối diện xe phía trước.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 118 -->
+<div class="question" data-answer="C">
+<p><b>Câu 118:</b> Để đạt được hiệu quả phanh cao nhất, người lái xe mô tô phải sử dụng các kỹ năng như thế nào dưới đây?</p>
+<label><input type="radio" name="q118" value="A"> A. Sử dụng phanh trước.</label>
+<label><input type="radio" name="q118" value="B"> B. Sử dụng phanh sau.</label>
+<label><input type="radio" name="q118" value="C"> C. Giảm hết ga, sử dụng đồng thời cả phanh sau và phanh trước.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 119 -->
+<div class="question" data-answer="B">
+<p><b>Câu 119:</b> Khi đang lái xe mô tô hoặc ô tô, nếu có nhu cầu sử dụng điện thoại để nhắn tin hoặc gọi điện, người lái xe phải thực hiện như thế nào trong các tình huống nêu dưới đây?</p>
+<label><input type="radio" name="q119" value="A"> A. Giảm tốc độ để bảo đảm an toàn với xe phía trước và sử dụng điện thoại để liên lạc.</label>
+<label><input type="radio" name="q119" value="B"> B. Giảm tốc độ để dừng xe ở nơi cho phép sau đó sử dụng điện thoại để liên lạc.</label>
+<label><input type="radio" name="q119" value="C"> C. Tăng tốc độ để cách xa xe phía sau và sử dụng điện thoại để liên lạc.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 120 -->
+<div class="question" data-answer="C">
+<p><b>Câu 120:</b> Những thói quen nào dưới đây khi điều khiển xe mô tô tay ga tham gia giao thông dễ gây tai nạn nguy hiểm?</p>
+<label><input type="radio" name="q120" value="A"> A. Sử dụng còi.</label>
+<label><input type="radio" name="q120" value="B"> B. Phanh đồng thời cả phanh trước và phanh sau.</label>
+<label><input type="radio" name="q120" value="C"> C. Chỉ sử dụng phanh trước.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 121 -->
+<div class="question" data-answer="D">
+<p><b>Câu 121:</b> Khi điều khiển xe mô tô quay đầu, người lái xe cần thực hiện như thế nào để bảo đảm an toàn?</p>
+<label><input type="radio" name="q121" value="A"> A. Bật tín hiệu báo rẽ trước khi quay đầu, từ từ giảm tốc độ đến mức có thể dừng lại.</label>
+<label><input type="radio" name="q121" value="B"> B. Chỉ quay đầu xe tại những nơi được phép quay đầu.</label>
+<label><input type="radio" name="q121" value="C"> C. Quan sát an toàn các phương tiện tới từ phía trước, phía sau, hai bên đồng thời nhường đường cho xe từ bên phải và phía trước đi tới.</label>
+<label><input type="radio" name="q121" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 122 -->
+<div class="question" data-answer="D">
+<p><b>Câu 122:</b> Tay ga trên xe mô tô hai bánh có tác dụng gì dưới đây?</p>
+<label><input type="radio" name="q122" value="A"> A. Để điều khiển xe chạy về phía trước.</label>
+<label><input type="radio" name="q122" value="B"> B. Để điều tiết công suất động cơ qua đó điều khiển tốc độ của xe.</label>
+<label><input type="radio" name="q122" value="C"> C. Để điều khiển xe chạy lùi.</label>
+<label><input type="radio" name="q122" value="D"> D. Ý 1 và ý 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 123 -->
+<div class="question" data-answer="C">
+<p><b>Câu 123:</b> Gương chiếu hậu của xe mô tô hai bánh có tác dụng gì dưới đây?</p>
+<label><input type="radio" name="q123" value="A"> A. Để quan sát an toàn phía bên trái khi chuẩn bị rẽ trái.</label>
+<label><input type="radio" name="q123" value="B"> B. Để quan sát an toàn phía bên phải khi chuẩn bị rẽ phải.</label>
+<label><input type="radio" name="q123" value="C"> C. Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng.</label>
+<label><input type="radio" name="q123" value="D"> D. Để quan sát an toàn phía trước cả bên trái và bên phải trước khi chuyển hướng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 124 -->
+<div class="question" data-answer="D">
+<p><b>Câu 124:</b> Để bảo đảm an toàn khi tham gia giao thông, người lái xe mô tô hai bánh cần điều khiển tay ga như thế nào?</p>
+<label><input type="radio" name="q124" value="A"> A. Tăng ga thật mạnh, giảm ga từ từ.</label>
+<label><input type="radio" name="q124" value="B"> B. Tăng ga thật mạnh, giảm ga thật nhanh.</label>
+<label><input type="radio" name="q124" value="C"> C. Tăng ga từ từ, giảm ga thật nhanh.</label>
+<label><input type="radio" name="q124" value="D"> D. Tăng ga từ từ, giảm ga từ từ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 125 -->
+<div class="question" data-answer="D">
+<p><b>Câu 125:</b> Để tránh đổ, ngã khi điều khiển xe mô tô hai bánh ở nơi đường xấu, nhỏ và hẹp, người lái xe cần xử lý như thế nào?</p>
+<label><input type="radio" name="q125" value="A"> A. Đi ở tốc độ thấp, quan sát liên tục khoảng cách từ 05 m đến 10 m phía trước để điều chỉnh sớm hướng di chuyển.</label>
+<label><input type="radio" name="q125" value="B"> B. Trong quá trình di chuyển không nên dùng phanh trước tránh làm khóa bánh dẫn hướng.</label>
+<label><input type="radio" name="q125" value="C"> C. Không được lắc người sang trái hoặc phải nhiều, trọng tâm cơ thể cần trùng với trọng tâm của xe.</label>
+<label><input type="radio" name="q125" value="D"> D. Cả ba ý trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 126 -->
+<div class="question" data-answer="B">
+<p><b>Câu 126:</b> Biển nào cấm máy kéo?</p>
+<img src="90_cau_bien_bao_files/image001.jpg" alt="Câu 126">
+<label><input type="radio" name="q126" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q126" value="B"> B. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q126" value="C"> C. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q126" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 127 -->
+<div class="question" data-answer="A">
+<p><b>Câu 127:</b> Biển nào báo hiệu cấm xe mô tô ba bánh chở hàng đi qua?</p>
+<img src="90_cau_bien_bao_files/image002.jpg" alt="Câu 127">
+<label><input type="radio" name="q127" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q127" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q127" value="C"> C. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 128 -->
+<div class="question" data-answer="C">
+<p><b>Câu 128:</b> Biển nào dưới đây xe gắn máy được phép đi vào?</p>
+<img src="90_cau_bien_bao_files/image003.jpg" alt="Câu 128">
+<label><input type="radio" name="q128" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q128" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q128" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 129 -->
+<div class="question" data-answer="A">
+<p><b>Câu 129:</b> Biển nào báo hiệu cấm xe mô tô đi vào?</p>
+<img src="90_cau_bien_bao_files/image004.jpg" alt="Câu 129">
+<label><input type="radio" name="q129" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q129" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q129" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 130 -->
+<div class="question" data-answer="C">
+<p><b>Câu 130:</b> Khi gặp biển nào thì xe mô tô hai bánh được đi vào?</p>
+<img src="90_cau_bien_bao_files/image005.jpg" alt="Câu 130">
+<label><input type="radio" name="q130" value="A"> A. Không biển nào.</label>
+<label><input type="radio" name="q130" value="B"> B. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q130" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q130" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 131 -->
+<div class="question" data-answer="B">
+<p><b>Câu 131:</b> Biển nào cấm quay đầu xe?</p>
+<img src="90_cau_bien_bao_files/image006.jpg" alt="Câu 131">
+<label><input type="radio" name="q131" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q131" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q131" value="C"> C. Không biển nào.</label>
+<label><input type="radio" name="q131" value="D"> D. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 132 -->
+<div class="question" data-answer="A">
+<p><b>Câu 132:</b> Biển nào cấm xe rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image007.jpg" alt="Câu 132">
+<label><input type="radio" name="q132" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q132" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q132" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 133 -->
+<div class="question" data-answer="B">
+<p><b>Câu 133:</b> Khi gặp biển nào xe được rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image008.jpg" alt="Câu 133">
+<label><input type="radio" name="q133" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q133" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q133" value="C"> C. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 134 -->
+<div class="question" data-answer="A">
+<p><b>Câu 134:</b> Biển nào cấm các phương tiện rẽ phải?</p>
+<img src="90_cau_bien_bao_files/image009.jpg" alt="Câu 134">
+<label><input type="radio" name="q134" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q134" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q134" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q134" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 135 -->
+<div class="question" data-answer="A">
+<p><b>Câu 135:</b> Biển nào cấm các phương tiện rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image010.jpg" alt="Câu 135">
+<label><input type="radio" name="q135" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q135" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q135" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q135" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 136 -->
+<div class="question" data-answer="B">
+<p><b>Câu 136:</b> Biển nào xe được phép rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image011.jpg" alt="Câu 136">
+<label><input type="radio" name="q136" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q136" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q136" value="C"> C. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 137 -->
+<div class="question" data-answer="C">
+<p><b>Câu 137:</b> Biển nào xe quay đầu không bị cấm?</p>
+<img src="90_cau_bien_bao_files/image012.jpg" alt="Câu 137">
+<label><input type="radio" name="q137" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q137" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q137" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 138 -->
+<div class="question" data-answer="A">
+<p><b>Câu 138:</b> Biển nào xe được phép quay đầu nhưng không được rẽ trái?</p>
+<img src="90_cau_bien_bao_files/image013.jpg" alt="Câu 138">
+<label><input type="radio" name="q138" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q138" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q138" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 139 -->
+<div class="question" data-answer="B">
+<p><b>Câu 139:</b> Biển nào là biển "Cấm đi ngược chiều"?</p>
+<img src="90_cau_bien_bao_files/image014.jpg" alt="Câu 139">
+<label><input type="radio" name="q139" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q139" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q139" value="C"> C. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 140 -->
+<div class="question" data-answer="C">
+<p><b>Câu 140:</b> Biển nào dưới đây các phương tiện không được phép đi vào?</p>
+<img src="90_cau_bien_bao_files/image015.jpg" alt="Câu 140">
+<label><input type="radio" name="q140" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q140" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q140" value="C"> C. Biển 1 và biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 141 -->
+<div class="question" data-answer="B">
+<p><b>Câu 141:</b> Khi gặp biển nào xe ưu tiên theo luật định vẫn phải dừng lại?</p>
+<img src="90_cau_bien_bao_files/image016.jpg" alt="Câu 141">
+<label><input type="radio" name="q141" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q141" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q141" value="C"> C. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 142 -->
+<div class="question" data-answer="A">
+<p><b>Câu 142:</b> Biển nào cấm tất cả các loại xe cơ giới và thô sơ, trừ xe ưu tiên?</p>
+<img src="90_cau_bien_bao_files/image017.jpg" alt="Câu 142">
+<label><input type="radio" name="q142" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q142" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q142" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 143 -->
+<div class="question" data-answer="A">
+<p><b>Câu 143:</b> Biển báo này có ý nghĩa như thế nào?</p>
+<img src="90_cau_bien_bao_files/image018.jpg" alt="Câu 143">
+<label><input type="radio" name="q143" value="A"> A. Tốc độ tối đa cho phép về ban đêm là 70 km/h.</label>
+<label><input type="radio" name="q143" value="B"> B. Tốc độ tối thiểu cho phép về ban đêm là 70 km/h.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 144 -->
+<div class="question" data-answer="A">
+<p><b>Câu 144:</b> Biển này có hiệu lực với xe mô tô hai bánh, ba bánh chở hàng không?</p>
+<img src="90_cau_bien_bao_files/image019.jpg" alt="Câu 144">
+<label><input type="radio" name="q144" value="A"> A. Có.</label>
+<label><input type="radio" name="q144" value="B"> B. Không.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 145 -->
+<div class="question" data-answer="B">
+<p><b>Câu 145:</b> Biển này có ý nghĩa như thế nào?</p>
+<img src="90_cau_bien_bao_files/image020.jpg" alt="Câu 145">
+<label><input type="radio" name="q145" value="A"> A. Cấm xe cơ giới (trừ xe ưu tiên) đi thẳng.</label>
+<label><input type="radio" name="q145" value="B"> B. Cấm các loại xe cơ giới và xe mô tô (trừ xe ưu tiên) đi về bên trái và bên phải.</label>
+<label><input type="radio" name="q145" value="C"> C. Hướng trái và phải không cấm xe cơ giới.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 146 -->
+<div class="question" data-answer="B">
+<p><b>Câu 146:</b> Biển phụ đặt dưới biển cấm bóp còi có ý nghĩa gì?</p>
+<img src="90_cau_bien_bao_files/image021.jpg" alt="Câu 146">
+<label><input type="radio" name="q146" value="A"> A. Khoảng cách đến nơi cấm bóp còi.</label>
+<label><input type="radio" name="q146" value="B"> B. Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển.</label>
+<label><input type="radio" name="q146" value="C"> C. Cấm dùng còi có độ vang xa 500m.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 147 -->
+<div class="question" data-answer="B">
+<p><b>Câu 147:</b> Đoạn đường 500m từ nơi đặt biển này, người lái xe có được phép bấm còi không?</p>
+<img src="90_cau_bien_bao_files/image021.jpg" alt="Câu 147">
+<label><input type="radio" name="q147" value="A"> A. Được phép.</label>
+<label><input type="radio" name="q147" value="B"> B. Không được phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 148 -->
+<div class="question" data-answer="B">
+<p><b>Câu 148:</b> Biển nào xe mô tô hai bánh được đi vào?</p>
+<img src="90_cau_bien_bao_files/image022.jpg" alt="Câu 148">
+<label><input type="radio" name="q148" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q148" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q148" value="C"> C. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 149 -->
+<div class="question" data-answer="B">
+<p><b>Câu 149:</b> Biển nào xe mô tô hai bánh không được đi vào?</p>
+<img src="90_cau_bien_bao_files/image023.jpg" alt="Câu 149">
+<label><input type="radio" name="q149" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q149" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q149" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 150 -->
+<div class="question" data-answer="A">
+<p><b>Câu 150:</b> Ba biển này có hiệu lực như thế nào?</p>
+<img src="90_cau_bien_bao_files/image024.jpg" alt="Câu 150">
+<label><input type="radio" name="q150" value="A"> A. Cấm các loại xe ở biển phụ đi vào.</label>
+<label><input type="radio" name="q150" value="B"> B. Cấm các loại xe cơ giới đi vào trừ loại xe ở biển phụ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 151 -->
+<div class="question" data-answer="B">
+<p><b>Câu 151:</b> Biển này có ý nghĩa như thế nào?</p>
+<img src="90_cau_bien_bao_files/image025.jpg" alt="Câu 151">
+<label><input type="radio" name="q151" value="A"> A. Cấm dừng xe về hướng bên trái.</label>
+<label><input type="radio" name="q151" value="B"> B. Cấm dừng và đỗ xe theo hướng bên phải.</label>
+<label><input type="radio" name="q151" value="C"> C. Được phép đỗ xe và dừng xe theo hướng bên phải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 152 -->
+<div class="question" data-answer="A">
+<p><b>Câu 152:</b> Biển "Tốc độ tối đa cho phép về ban đêm"?</p>
+<img src="90_cau_bien_bao_files/image026.jpg" alt="Câu 152">
+<label><input type="radio" name="q152" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q152" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q152" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 153 -->
+<div class="question" data-answer="B">
+<p><b>Câu 153:</b> Biển báo hiệu tốc độ không vượt quá trị số ghi trên biển?</p>
+<img src="90_cau_bien_bao_files/image027.jpg" alt="Câu 153">
+<label><input type="radio" name="q153" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q153" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 154 -->
+<div class="question" data-answer="A">
+<p><b>Câu 154:</b> Số 50 ghi trên biển có ý nghĩa gì?</p>
+<img src="90_cau_bien_bao_files/image029.jpg" alt="Câu 154">
+<label><input type="radio" name="q154" value="A"> A. Tốc độ tối đa cho phép.</label>
+<label><input type="radio" name="q154" value="B"> B. Tốc độ tối thiểu cho phép.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 155 -->
+<div class="question" data-answer="A">
+<p><b>Câu 155:</b> Gặp biển nào người lái xe phải nhường đường cho người đi bộ?</p>
+<img src="90_cau_bien_bao_files/image031.jpg" alt="Câu 155">
+<label><input type="radio" name="q155" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q155" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q155" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 157 -->
+<div class="question" data-answer="C">
+<p><b>Câu 157:</b> Biển chỉ đường dành cho người đi bộ, các loại xe không được đi vào?</p>
+<img src="90_cau_bien_bao_files/image031.jpg" alt="Câu 157">
+<label><input type="radio" name="q157" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q157" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q157" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q157" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 158 -->
+<div class="question" data-answer="A">
+<p><b>Câu 158:</b> Biển "Đường dành cho xe thô sơ"?</p>
+<img src="90_cau_bien_bao_files/image032.jpg" alt="Câu 158">
+<label><input type="radio" name="q158" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q158" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q158" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 159 -->
+<div class="question" data-answer="D">
+<p><b>Câu 159:</b> Biển báo sắp đến chỗ giao nhau nguy hiểm?</p>
+<img src="90_cau_bien_bao_files/image033.jpg" alt="Câu 159">
+<label><input type="radio" name="q159" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q159" value="B"> B. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q159" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q159" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 160 -->
+<div class="question" data-answer="A">
+<p><b>Câu 160:</b> Biển "Giao nhau với đường sắt có rào chắn"?</p>
+<img src="90_cau_bien_bao_files/image033.jpg" alt="Câu 160">
+<label><input type="radio" name="q160" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q160" value="B"> B. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q160" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 161 -->
+<div class="question" data-answer="C">
+<p><b>Câu 161:</b> Biển "Giao nhau có tín hiệu đèn"?</p>
+<img src="90_cau_bien_bao_files/image034.jpg" alt="Câu 161">
+<label><input type="radio" name="q161" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q161" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q161" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q161" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 162 -->
+<div class="question" data-answer="B">
+<p><b>Câu 162:</b> Biển báo nguy hiểm giao nhau với đường sắt?</p>
+<img src="90_cau_bien_bao_files/image035.jpg" alt="Câu 162">
+<label><input type="radio" name="q162" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q162" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q162" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q162" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 163 -->
+<div class="question" data-answer="C">
+<p><b>Câu 163:</b> Biển đường bộ giao nhau với đường sắt không có rào chắn?</p>
+<img src="90_cau_bien_bao_files/image036.jpg" alt="Câu 163">
+<label><input type="radio" name="q163" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q163" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q163" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q163" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 164 -->
+<div class="question" data-answer="A">
+<p><b>Câu 164:</b> Biển sắp đến chỗ giao nhau giữa đường bộ và đường sắt?</p>
+<img src="90_cau_bien_bao_files/image037.jpg" alt="Câu 164">
+<label><input type="radio" name="q164" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q164" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q164" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q164" value="D"> D. Biển 1 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 165 -->
+<div class="question" data-answer="B">
+<p><b>Câu 165:</b> Biển "Cửa chui"?</p>
+<img src="90_cau_bien_bao_files/image038.jpg" alt="Câu 165">
+<label><input type="radio" name="q165" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q165" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q165" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 166 (hai biển image039) -->
+<div class="question" data-answer="A">
+<p><b>Câu 166:</b> Hai biển này có ý nghĩa như thế nào?</p>
+<img src="90_cau_bien_bao_files/image039.jpg" alt="Câu 166">
+<label><input type="radio" name="q166" value="A"> A. Để chỉ nơi đường sắt giao vuông góc với đường bộ không có rào chắn.</label>
+<label><input type="radio" name="q166" value="B"> B. Để báo trước sắp đến vị trí giao cắt không vuông góc, không có rào chắn.</label>
+<label><input type="radio" name="q166" value="C"> C. Nơi đường sắt giao nhau với đường bộ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 167 -->
+<div class="question" data-answer="C">
+<p><b>Câu 167:</b> Biển "Hết đoạn đường ưu tiên"?</p>
+<img src="90_cau_bien_bao_files/image040.jpg" alt="Câu 167">
+<label><input type="radio" name="q167" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q167" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q167" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 168 -->
+<div class="question" data-answer="B">
+<p><b>Câu 168:</b> Biển báo hiệu xe được ưu tiên qua nơi giao nhau?</p>
+<img src="90_cau_bien_bao_files/image041.jpg" alt="Câu 168">
+<label><input type="radio" name="q168" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q168" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q168" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q168" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 169 -->
+<div class="question" data-answer="A">
+<p><b>Câu 169:</b> Biển "Giao nhau với đường không ưu tiên"?</p>
+<img src="90_cau_bien_bao_files/image042.jpg" alt="Câu 169">
+<label><input type="radio" name="q169" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q169" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q169" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q169" value="D"> D. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 170 -->
+<div class="question" data-answer="C">
+<p><b>Câu 170:</b> Biển "Giao nhau với đường ưu tiên"?</p>
+<img src="90_cau_bien_bao_files/image043.jpg" alt="Câu 170">
+<label><input type="radio" name="q170" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q170" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q170" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q170" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 171 -->
+<div class="question" data-answer="A">
+<p><b>Câu 171:</b> Biển "Đường giao nhau" cùng cấp?</p>
+<img src="90_cau_bien_bao_files/image044.jpg" alt="Câu 171">
+<label><input type="radio" name="q171" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q171" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q171" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 172 -->
+<div class="question" data-answer="A">
+<p><b>Câu 172:</b> Biển "Đường hai chiều"?</p>
+<img src="90_cau_bien_bao_files/image045.jpg" alt="Câu 172">
+<label><input type="radio" name="q172" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q172" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q172" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 173 -->
+<div class="question" data-answer="B">
+<p><b>Câu 173:</b> Biển phải giảm tốc độ nhường đường qua đường hẹp?</p>
+<img src="90_cau_bien_bao_files/image046.jpg" alt="Câu 173">
+<label><input type="radio" name="q173" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q173" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q173" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 174 -->
+<div class="question" data-answer="C">
+<p><b>Câu 174:</b> Biển chỉ dẫn "Được ưu tiên qua đường hẹp"?</p>
+<img src="90_cau_bien_bao_files/image047.jpg" alt="Câu 174">
+<label><input type="radio" name="q174" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q174" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q174" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q174" value="D"> D. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 175 -->
+<div class="question" data-answer="C">
+<p><b>Câu 175:</b> Biển "Đường đôi"?</p>
+<img src="90_cau_bien_bao_files/image048.jpg" alt="Câu 175">
+<label><input type="radio" name="q175" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q175" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q175" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 176 -->
+<div class="question" data-answer="C">
+<p><b>Câu 176:</b> Biển "Kết thúc đường đôi"?</p>
+<img src="90_cau_bien_bao_files/image049.jpg" alt="Câu 176">
+<label><input type="radio" name="q176" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q176" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q176" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 177 -->
+<div class="question" data-answer="A">
+<p><b>Câu 177:</b> Biển "Giao nhau với đường hai chiều"?</p>
+<img src="90_cau_bien_bao_files/image050.jpg" alt="Câu 177">
+<label><input type="radio" name="q177" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q177" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q177" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 178 -->
+<div class="question" data-answer="B">
+<p><b>Câu 178:</b> Biển "Giao nhau với đường hai chiều" (ảnh 2)?</p>
+<img src="90_cau_bien_bao_files/image051.jpg" alt="Câu 178">
+<label><input type="radio" name="q178" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q178" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q178" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 179 -->
+<div class="question" data-answer="B">
+<p><b>Câu 179:</b> Biển "Chú ý chướng ngại vật"?</p>
+<img src="90_cau_bien_bao_files/image052.jpg" alt="Câu 179">
+<label><input type="radio" name="q179" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q179" value="B"> B. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q179" value="C"> C. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 180 -->
+<div class="question" data-answer="B">
+<p><b>Câu 180:</b> Biển "Đường hầm"?</p>
+<img src="90_cau_bien_bao_files/image053.jpg" alt="Câu 180">
+<label><input type="radio" name="q180" value="A"> A. Cả ba biển.</label>
+<label><input type="radio" name="q180" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q180" value="C"> C. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 181 -->
+<div class="question" data-answer="B">
+<p><b>Câu 181:</b> Biển "Cầu hẹp"?</p>
+<img src="90_cau_bien_bao_files/image054.jpg" alt="Câu 181">
+<label><input type="radio" name="q181" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q181" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q181" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 182 -->
+<div class="question" data-answer="B">
+<p><b>Câu 182:</b> Biển báo trẻ em: đi chậm đề phòng trẻ em?</p>
+<img src="90_cau_bien_bao_files/image055.jpg" alt="Câu 182">
+<label><input type="radio" name="q182" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q182" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 183 -->
+<div class="question" data-answer="B">
+<p><b>Câu 183:</b> Biển nơi bắt đầu đường dành cho người đi bộ?</p>
+<img src="90_cau_bien_bao_files/image056.jpg" alt="Câu 183">
+<label><input type="radio" name="q183" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q183" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q183" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 184 -->
+<div class="question" data-answer="B">
+<p><b>Câu 184:</b> Biển báo gần đến đoạn đường thường có trẻ em qua?</p>
+<img src="90_cau_bien_bao_files/image057.jpg" alt="Câu 184">
+<label><input type="radio" name="q184" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q184" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q184" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q184" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 185 -->
+<div class="question" data-answer="A">
+<p><b>Câu 185:</b> Biển "Dốc xuống nguy hiểm"?</p>
+<img src="90_cau_bien_bao_files/image058.jpg" alt="Câu 185">
+<label><input type="radio" name="q185" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q185" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 186 -->
+<div class="question" data-answer="A">
+<p><b>Câu 186:</b> Biển báo đường có ổ gà, lồi lõm?</p>
+<img src="90_cau_bien_bao_files/image059.jpg" alt="Câu 186">
+<label><input type="radio" name="q186" value="A"> A. Báo hiệu đường có ổ gà, lồi lõm.</label>
+<label><input type="radio" name="q186" value="B"> B. Báo hiệu gồ giảm tốc phía trước.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 187 -->
+<div class="question" data-answer="A">
+<p><b>Câu 187:</b> Các biển báo này có ý nghĩa gì?</p>
+<img src="90_cau_bien_bao_files/image060.jpg" alt="Câu 187">
+<label><input type="radio" name="q187" value="A"> A. Báo trước đất đá sụt lở bất ngờ.</label>
+<label><input type="radio" name="q187" value="B"> B. Báo trước mặt đường rời rạc.</label>
+<label><input type="radio" name="q187" value="C"> C. Cảnh báo nền đường yếu.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 188 -->
+<div class="question" data-answer="C">
+<p><b>Câu 188:</b> Biển yêu cầu tuân thủ tốc độ tối đa theo làn đường?</p>
+<img src="90_cau_bien_bao_files/image061.jpg" alt="Câu 188">
+<label><input type="radio" name="q188" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q188" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q188" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 189 -->
+<div class="question" data-answer="A">
+<p><b>Câu 189:</b> Biển cấm các phương tiện trừ ô tô và mô tô?</p>
+<img src="90_cau_bien_bao_files/image062.jpg" alt="Câu 189">
+<label><input type="radio" name="q189" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q189" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 190 -->
+<div class="question" data-answer="B">
+<p><b>Câu 190:</b> Biển ý nghĩa số lượng làn đường và hướng đi?</p>
+<img src="90_cau_bien_bao_files/image063.jpg" alt="Câu 190">
+<label><input type="radio" name="q190" value="A"> A. Chỉ hướng đi phải theo.</label>
+<label><input type="radio" name="q190" value="B"> B. Cho biết số làn và hướng đi trên mỗi làn.</label>
+<label><input type="radio" name="q190" value="C"> C. Chỉ hướng đường phải theo.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 191 -->
+<div class="question" data-answer="C">
+<p><b>Câu 191:</b> Biển cho phép rẽ sang hướng khác (đặt trước ngã ba, ngã tư)?</p>
+<img src="90_cau_bien_bao_files/image064.jpg" alt="Câu 191">
+<label><input type="radio" name="q191" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q191" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q191" value="C"> C. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 192 -->
+<div class="question" data-answer="A">
+<p><b>Câu 192:</b> Biển "Hướng đi thẳng phải theo"?</p>
+<img src="90_cau_bien_bao_files/image065.jpg" alt="Câu 192">
+<label><input type="radio" name="q192" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q192" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 193 -->
+<div class="question" data-answer="B">
+<p><b>Câu 193:</b> Biển "Đường một chiều"?</p>
+<img src="90_cau_bien_bao_files/image066.jpg" alt="Câu 193">
+<label><input type="radio" name="q193" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q193" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q193" value="C"> C. Cả hai biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 194 -->
+<div class="question" data-answer="A">
+<p><b>Câu 194:</b> Biển "Hết tốc độ tối đa cho phép"?</p>
+<img src="90_cau_bien_bao_files/image067.jpg" alt="Câu 194">
+<label><input type="radio" name="q194" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q194" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q194" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q194" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 195 -->
+<div class="question" data-answer="C">
+<p><b>Câu 195:</b> Biển "Hết tốc độ tối thiểu"?</p>
+<img src="90_cau_bien_bao_files/image067.jpg" alt="Câu 195">
+<label><input type="radio" name="q195" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q195" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q195" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q195" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 196 -->
+<div class="question" data-answer="D">
+<p><b>Câu 196:</b> Biển báo hết cấm vượt?</p>
+<img src="90_cau_bien_bao_files/image068.jpg" alt="Câu 196">
+<label><input type="radio" name="q196" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q196" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q196" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q196" value="D"> D. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 197 -->
+<div class="question" data-answer="B">
+<p><b>Câu 197:</b> Biển "Hết mọi lệnh cấm"?</p>
+<img src="90_cau_bien_bao_files/image069.jpg" alt="Câu 197">
+<label><input type="radio" name="q197" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q197" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q197" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q197" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 198 -->
+<div class="question" data-answer="C">
+<p><b>Câu 198:</b> Biển cho phép quay đầu xe (trước ngã ba, ngã tư)?</p>
+<img src="90_cau_bien_bao_files/image070.jpg" alt="Câu 198">
+<label><input type="radio" name="q198" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q198" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q198" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q198" value="D"> D. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 199 -->
+<div class="question" data-answer="A">
+<p><b>Câu 199:</b> Biển không cho phép rẽ phải?</p>
+<img src="90_cau_bien_bao_files/image071.jpg" alt="Câu 199">
+<label><input type="radio" name="q199" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q199" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q199" value="C"> C. Biển 3.</label>
+<label><input type="radio" name="q199" value="D"> D. Biển 1 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 200 -->
+<div class="question" data-answer="A">
+<p><b>Câu 200:</b> Gặp biển nào không được đi thẳng, phải rẽ?</p>
+<img src="90_cau_bien_bao_files/image072.jpg" alt="Câu 200">
+<label><input type="radio" name="q200" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q200" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q200" value="C"> C. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q200" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 201 -->
+<div class="question" data-answer="A">
+<p><b>Câu 201:</b> Biển số 1 có ý nghĩa gì?</p>
+<img src="90_cau_bien_bao_files/image073.jpg" alt="Câu 201">
+<label><input type="radio" name="q201" value="A"> A. Hết cấm đỗ xe theo giờ trong khu vực.</label>
+<label><input type="radio" name="q201" value="B"> B. Hết hiệu lực khu vực đỗ xe.</label>
+<label><input type="radio" name="q201" value="C"> C. Khu vực đỗ xe.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 202 -->
+<div class="question" data-answer="A">
+<p><b>Câu 202:</b> Biển chỉ dẫn người đi bộ sử dụng cầu vượt?</p>
+<img src="90_cau_bien_bao_files/image074.jpg" alt="Câu 202">
+<label><input type="radio" name="q202" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q202" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q202" value="C"> C. Cả hai biển.</label>
+<label><input type="radio" name="q202" value="D"> D. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 203 -->
+<div class="question" data-answer="B">
+<p><b>Câu 203:</b> Biển hầm chui cho người đi bộ?</p>
+<img src="90_cau_bien_bao_files/image075.jpg" alt="Câu 203">
+<label><input type="radio" name="q203" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q203" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q203" value="C"> C. Cả hai biển.</label>
+<label><input type="radio" name="q203" value="D"> D. Không biển nào.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 204 -->
+<div class="question" data-answer="B">
+<p><b>Câu 204:</b> Biển "Nơi đỗ xe dành cho người khuyết tật"?</p>
+<img src="90_cau_bien_bao_files/image076.jpg" alt="Câu 204">
+<label><input type="radio" name="q204" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q204" value="B"> B. Biển 2.</label>
+<label><input type="radio" name="q204" value="C"> C. Biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 205 -->
+<div class="question" data-answer="C">
+<p><b>Câu 205:</b> Gặp biển này, xử lý thế nào?</p>
+<img src="90_cau_bien_bao_files/image077.jpg" alt="Câu 205">
+<label><input type="radio" name="q205" value="A"> A. Dừng xe tại khu vực CSGT.</label>
+<label><input type="radio" name="q205" value="B"> B. Tiếp tục tốc độ bình thường.</label>
+<label><input type="radio" name="q205" value="C"> C. Giảm tốc độ an toàn, không vượt.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 206 -->
+<div class="question" data-answer="A">
+<p><b>Câu 206:</b> Có bắt buộc chạy vòng theo đảo an toàn khi chuyển hướng?</p>
+<img src="90_cau_bien_bao_files/image078.jpg" alt="Câu 206">
+<label><input type="radio" name="q206" value="A"> A. Bắt buộc.</label>
+<label><input type="radio" name="q206" value="B"> B. Không bắt buộc.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 207 -->
+<div class="question" data-answer="C">
+<p><b>Câu 207:</b> Biển "Cầu vượt liên thông"?</p>
+<img src="90_cau_bien_bao_files/image079.jpg" alt="Câu 207">
+<label><input type="radio" name="q207" value="A"> A. Biển 2 và biển 3.</label>
+<label><input type="radio" name="q207" value="B"> B. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q207" value="C"> C. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q207" value="D"> D. Cả ba biển.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 208 -->
+<div class="question" data-answer="C">
+<p><b>Câu 208:</b> Biển số 1 ý nghĩa?</p>
+<img src="90_cau_bien_bao_files/image080.jpg" alt="Câu 208">
+<label><input type="radio" name="q208" value="A"> A. Đi thẳng hoặc rẽ trái trên cầu vượt.</label>
+<label><input type="radio" name="q208" value="B"> B. Đi thẳng hoặc rẽ phải trên cầu vượt.</label>
+<label><input type="radio" name="q208" value="C"> C. Báo hiệu cầu vượt liên thông.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 209 -->
+<div class="question" data-answer="A">
+<p><b>Câu 209:</b> Biển "Tuyến đường cầu vượt cắt qua"?</p>
+<img src="90_cau_bien_bao_files/image081.jpg" alt="Câu 209">
+<label><input type="radio" name="q209" value="A"> A. Biển 1 và biển 2.</label>
+<label><input type="radio" name="q209" value="B"> B. Biển 1 và biển 3.</label>
+<label><input type="radio" name="q209" value="C"> C. Biển 2 và biển 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 210 -->
+<div class="question" data-answer="A">
+<p><b>Câu 210:</b> Biển báo ý nghĩa khoảng cách đến làn thoát khẩn cấp?</p>
+<img src="90_cau_bien_bao_files/image082.jpg" alt="Câu 210">
+<label><input type="radio" name="q210" value="A"> A. Khoảng cách đến làn cứu nạn.</label>
+<label><input type="radio" name="q210" value="B"> B. Báo đường cụt.</label>
+<label><input type="radio" name="q210" value="C"> C. Nút giao gần nhất.</label>
+<label><input type="radio" name="q210" value="D"> D. Trạm dừng nghỉ.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 211 -->
+<div class="question" data-answer="B">
+<p><b>Câu 211:</b> Làn đường riêng cho từng loại xe, có được chuyển làn?</p>
+<img src="90_cau_bien_bao_files/image083.jpg" alt="Câu 211">
+<label><input type="radio" name="q211" value="A"> A. Được phép chuyển.</label>
+<label><input type="radio" name="q211" value="B"> B. Không được phép chuyển, chỉ đi trong làn quy định.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 212 -->
+<div class="question" data-answer="B">
+<p><b>Câu 212:</b> Biển cho phép đi cả hai hướng?</p>
+<img src="90_cau_bien_bao_files/image084.jpg" alt="Câu 212">
+<label><input type="radio" name="q212" value="A"> A. Biển 1.</label>
+<label><input type="radio" name="q212" value="B"> B. Biển 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 213 -->
+<div class="question" data-answer="B">
+<p><b>Câu 213:</b> Biển này ý nghĩa (chỉ dẫn hướng rẽ vào đường cong)?</p>
+<img src="90_cau_bien_bao_files/image085.jpg" alt="Câu 213">
+<label><input type="radio" name="q213" value="A"> A. Cảnh báo chướng ngại vật và hướng đi qua.</label>
+<label><input type="radio" name="q213" value="B"> B. Chỉ dẫn hướng rẽ chuẩn bị đổi hướng vào đường cong nguy hiểm.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 214 -->
+<div class="question" data-answer="C">
+<p><b>Câu 214:</b> Vạch mũi tên nào cho phép đi thẳng và rẽ phải?</p>
+<img src="90_cau_bien_bao_files/image086.jpg" alt="Câu 214">
+<label><input type="radio" name="q214" value="A"> A. Vạch 1.</label>
+<label><input type="radio" name="q214" value="B"> B. Vạch 2 và vạch 3.</label>
+<label><input type="radio" name="q214" value="C"> C. Vạch 3.</label>
+<label><input type="radio" name="q214" value="D"> D. Vạch 1 và vạch 2.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 215 -->
+<div class="question" data-answer="B">
+<p><b>Câu 215:</b> Vạch phân chia hai chiều, không được lấn làn?</p>
+<img src="90_cau_bien_bao_files/image087.jpg" alt="Câu 215">
+<label><input type="radio" name="q215" value="A"> A. Vạch 1.</label>
+<label><input type="radio" name="q215" value="B"> B. Vạch 2.</label>
+<label><input type="radio" name="q215" value="C"> C. Vạch 3.</label>
+<label><input type="radio" name="q215" value="D"> D. Cả ba vạch.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 216 -->
+<div class="question" data-answer="C">
+<p><b>Câu 216:</b> Theo hướng mũi tên, xe nào chấp hành đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image001.jpg" alt="Câu 216">
+<label><input type="radio" name="q216" value="A"> A. Xe khách, xe tải, xe mô tô.</label>
+<label><input type="radio" name="q216" value="B"> B. Xe tải, xe mô tô.</label>
+<label><input type="radio" name="q216" value="C"> C. Chỉ xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 217 -->
+<div class="question" data-answer="B">
+<p><b>Câu 217:</b> Theo hướng mũi tên, thứ tự các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image002.jpg" alt="Câu 217">
+<label><input type="radio" name="q217" value="A"> A. Xe tải, xe khách, xe con, xe mô tô.</label>
+<label><input type="radio" name="q217" value="B"> B. Xe tải, xe mô tô, xe khách, xe con.</label>
+<label><input type="radio" name="q217" value="C"> C. Xe khách, xe tải, xe con, xe mô tô.</label>
+<label><input type="radio" name="q217" value="D"> D. Xe mô tô, xe khách, xe tải, xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 218 -->
+<div class="question" data-answer="C">
+<p><b>Câu 218:</b> Theo hướng mũi tên, thứ tự các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image003.jpg" alt="Câu 218">
+<label><input type="radio" name="q218" value="A"> A. Xe tải, xe con, xe mô tô.</label>
+<label><input type="radio" name="q218" value="B"> B. Xe con, xe tải, xe mô tô.</label>
+<label><input type="radio" name="q218" value="C"> C. Xe mô tô, xe con, xe tải.</label>
+<label><input type="radio" name="q218" value="D"> D. Xe con, xe mô tô, xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 219 -->
+<div class="question" data-answer="B">
+<p><b>Câu 219:</b> Trường hợp này xe nào được quyền đi trước?</p>
+<img src="34_cau_sa_hinh_files/image004.jpg" alt="Câu 219">
+<label><input type="radio" name="q219" value="A"> A. Xe mô tô.</label>
+<label><input type="radio" name="q219" value="B"> B. Xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 220 -->
+<div class="question" data-answer="B">
+<p><b>Câu 220:</b> Xe nào được quyền đi trước trong trường hợp này?</p>
+<img src="34_cau_sa_hinh_files/image005.jpg" alt="Câu 220">
+<label><input type="radio" name="q220" value="A"> A. Xe mô tô.</label>
+<label><input type="radio" name="q220" value="B"> B. Xe cứu thương đi làm nhiệm vụ cấp cứu.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 221 -->
+<div class="question" data-answer="A">
+<p><b>Câu 221:</b> Theo tín hiệu đèn, xe nào được phép đi?</p>
+<img src="34_cau_sa_hinh_files/image006.jpg" alt="Câu 221">
+<label><input type="radio" name="q221" value="A"> A. Xe con và xe khách.</label>
+<label><input type="radio" name="q221" value="B"> B. Xe mô tô.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 222 -->
+<div class="question" data-answer="B">
+<p><b>Câu 222:</b> Theo tín hiệu đèn, xe nào đi là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image007.jpg" alt="Câu 222">
+<label><input type="radio" name="q222" value="A"> A. Xe khách, xe mô tô.</label>
+<label><input type="radio" name="q222" value="B"> B. Xe con, xe tải.</label>
+<label><input type="radio" name="q222" value="C"> C. Xe tải, xe mô tô.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 223 -->
+<div class="question" data-answer="A">
+<p><b>Câu 223:</b> Các xe đi theo hướng mũi tên, những xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image008.jpg" alt="Câu 223">
+<label><input type="radio" name="q223" value="A"> A. Xe khách, xe tải, xe mô tô.</label>
+<label><input type="radio" name="q223" value="B"> B. Xe tải, xe con, xe mô tô.</label>
+<label><input type="radio" name="q223" value="C"> C. Xe khách, xe con, xe mô tô.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 224 -->
+<div class="question" data-answer="C">
+<p><b>Câu 224:</b> Theo hướng mũi tên, thứ tự các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image009.jpg" alt="Câu 224">
+<label><input type="radio" name="q224" value="A"> A. Xe khách, xe tải, xe mô tô, xe con.</label>
+<label><input type="radio" name="q224" value="B"> B. Xe con, xe khách, xe tải, xe mô tô.</label>
+<label><input type="radio" name="q224" value="C"> C. Xe mô tô, xe tải, xe khách, xe con.</label>
+<label><input type="radio" name="q224" value="D"> D. Xe mô tô, xe tải, xe con, xe khách.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 225 -->
+<div class="question" data-answer="A">
+<p><b>Câu 225:</b> Trong trường hợp này xe nào đỗ vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image010.jpg" alt="Câu 225">
+<label><input type="radio" name="q225" value="A"> A. Xe tải.</label>
+<label><input type="radio" name="q225" value="B"> B. Xe con và mô tô.</label>
+<label><input type="radio" name="q225" value="C"> C. Cả ba xe.</label>
+<label><input type="radio" name="q225" value="D"> D. Xe con và xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 226 -->
+<div class="question" data-answer="A">
+<p><b>Câu 226:</b> Theo hướng mũi tên, những hướng nào xe gắn máy được phép đi?</p>
+<img src="34_cau_sa_hinh_files/image011.jpg" alt="Câu 226">
+<label><input type="radio" name="q226" value="A"> A. Cả ba hướng.</label>
+<label><input type="radio" name="q226" value="B"> B. Chỉ hướng 1 và 3.</label>
+<label><input type="radio" name="q226" value="C"> C. Chỉ hướng 1.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 227 -->
+<div class="question" data-answer="A">
+<p><b>Câu 227:</b> Xe nào đỗ vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image012.jpg" alt="Câu 227">
+<label><input type="radio" name="q227" value="A"> A. Cả hai xe.</label>
+<label><input type="radio" name="q227" value="B"> B. Không xe nào vi phạm.</label>
+<label><input type="radio" name="q227" value="C"> C. Chỉ xe mô tô vi phạm.</label>
+<label><input type="radio" name="q227" value="D"> D. Chỉ xe tải vi phạm.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 228 -->
+<div class="question" data-answer="C">
+<p><b>Câu 228:</b> Xe nào đỗ vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image013.jpg" alt="Câu 228">
+<label><input type="radio" name="q228" value="A"> A. Chỉ xe mô tô.</label>
+<label><input type="radio" name="q228" value="B"> B. Chỉ xe tải.</label>
+<label><input type="radio" name="q228" value="C"> C. Cả ba xe.</label>
+<label><input type="radio" name="q228" value="D"> D. Chỉ xe mô tô và xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 230 -->
+<div class="question" data-answer="D">
+<p><b>Câu 230:</b> Theo hướng mũi tên, thứ tự các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image014.jpg" alt="Câu 230">
+<label><input type="radio" name="q230" value="A"> A. Xe con (A), xe mô tô, xe con (B), xe đạp.</label>
+<label><input type="radio" name="q230" value="B"> B. Xe con (B), xe đạp, xe mô tô, xe con (A).</label>
+<label><input type="radio" name="q230" value="C"> C. Xe con (A), xe con (B), xe mô tô + xe đạp.</label>
+<label><input type="radio" name="q230" value="D"> D. Xe mô tô + xe đạp, xe con (A), xe con (B).</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 231 -->
+<div class="question" data-answer="A">
+<p><b>Câu 231:</b> Xe nào được quyền đi trước trong trường hợp này?</p>
+<img src="34_cau_sa_hinh_files/image015.jpg" alt="Câu 231">
+<label><input type="radio" name="q231" value="A"> A. Xe mô tô.</label>
+<label><input type="radio" name="q231" value="B"> B. Xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 232 -->
+<div class="question" data-answer="C">
+<p><b>Câu 232:</b> Xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image016.jpg" alt="Câu 232">
+<label><input type="radio" name="q232" value="A"> A. Xe khách.</label>
+<label><input type="radio" name="q232" value="B"> B. Xe mô tô.</label>
+<label><input type="radio" name="q232" value="C"> C. Xe con.</label>
+<label><input type="radio" name="q232" value="D"> D. Xe con và xe mô tô.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 233 -->
+<div class="question" data-answer="C">
+<p><b>Câu 233:</b> Các xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image017.jpg" alt="Câu 233">
+<label><input type="radio" name="q233" value="A"> A. Các xe ở phía tay phải và tay trái của người điều khiển được phép đi thẳng.</label>
+<label><input type="radio" name="q233" value="B"> B. Cho phép các xe ở mọi hướng được phép rẽ phải.</label>
+<label><input type="radio" name="q233" value="C"> C. Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 234 -->
+<div class="question" data-answer="C">
+<p><b>Câu 234:</b> Theo hướng mũi tên, xe nào được phép đi?</p>
+<img src="34_cau_sa_hinh_files/image018.jpg" alt="Câu 234">
+<label><input type="radio" name="q234" value="A"> A. Xe mô tô, xe con.</label>
+<label><input type="radio" name="q234" value="B"> B. Xe con, xe tải.</label>
+<label><input type="radio" name="q234" value="C"> C. Xe mô tô, xe tải.</label>
+<label><input type="radio" name="q234" value="D"> D. Cả ba xe.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 235 -->
+<div class="question" data-answer="B">
+<p><b>Câu 235:</b> Trong hình dưới đây, xe nào chấp hành đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image019.jpg" alt="Câu 235">
+<label><input type="radio" name="q235" value="A"> A. Chỉ xe khách, xe mô tô.</label>
+<label><input type="radio" name="q235" value="B"> B. Tất cả các loại xe trên.</label>
+<label><input type="radio" name="q235" value="C"> C. Không xe nào chấp hành đúng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 236 -->
+<div class="question" data-answer="C">
+<p><b>Câu 236:</b> Theo hướng mũi tên, những hướng nào xe mô tô được phép đi?</p>
+<img src="34_cau_sa_hinh_files/image020.jpg" alt="Câu 236">
+<label><input type="radio" name="q236" value="A"> A. Cả ba hướng.</label>
+<label><input type="radio" name="q236" value="B"> B. Hướng 1 và 2.</label>
+<label><input type="radio" name="q236" value="C"> C. Hướng 1 và 3.</label>
+<label><input type="radio" name="q236" value="D"> D. Hướng 2 và 3.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 237 -->
+<div class="question" data-answer="B">
+<p><b>Câu 237:</b> Trong trường hợp này, thứ tự xe đi như thế nào là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image021.jpg" alt="Câu 237">
+<label><input type="radio" name="q237" value="A"> A. Xe công an đi làm nhiệm vụ khẩn cấp, xe quân sự đi làm nhiệm vụ khẩn cấp, xe con + xe mô tô.</label>
+<label><input type="radio" name="q237" value="B"> B. Xe quân sự đi làm nhiệm vụ khẩn cấp, xe công an đi làm nhiệm vụ khẩn cấp, xe con + xe mô tô.</label>
+<label><input type="radio" name="q237" value="C"> C. Xe mô tô + xe con, xe quân sự đi làm nhiệm vụ khẩn cấp, xe công an đi làm nhiệm vụ khẩn cấp.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 238 -->
+<div class="question" data-answer="A">
+<p><b>Câu 238:</b> Trong hình dưới, những xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image022.jpg" alt="Câu 238">
+<label><input type="radio" name="q238" value="A"> A. Xe con (E), xe mô tô (C).</label>
+<label><input type="radio" name="q238" value="B"> B. Xe tải (A), xe mô tô (D).</label>
+<label><input type="radio" name="q238" value="C"> C. Xe khách (B), xe mô tô (C).</label>
+<label><input type="radio" name="q238" value="D"> D. Xe khách (B), xe mô tô (D).</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 239 -->
+<div class="question" data-answer="C">
+<p><b>Câu 239:</b> Trong hình dưới, những xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image023.jpg" alt="Câu 239">
+<label><input type="radio" name="q239" value="A"> A. Xe con (B), xe mô tô (C).</label>
+<label><input type="radio" name="q239" value="B"> B. Xe con (A), xe mô tô (C).</label>
+<label><input type="radio" name="q239" value="C"> C. Xe con (E), xe mô tô (D).</label>
+<label><input type="radio" name="q239" value="D"> D. Tất cả các loại xe trên.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 240 -->
+<div class="question" data-answer="C">
+<p><b>Câu 240:</b> Theo tín hiệu đèn, xe nào phải dừng lại là đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image024.jpg" alt="Câu 240">
+<label><input type="radio" name="q240" value="A"> A. Xe khách, xe mô tô.</label>
+<label><input type="radio" name="q240" value="B"> B. Xe tải, xe mô tô.</label>
+<label><input type="radio" name="q240" value="C"> C. Xe con, xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 241 -->
+<div class="question" data-answer="B">
+<p><b>Câu 241:</b> Bạn có được phép vượt xe mô tô phía trước không?</p>
+<img src="34_cau_sa_hinh_files/image025.jpg" alt="Câu 241">
+<label><input type="radio" name="q241" value="A"> A. Cho phép.</label>
+<label><input type="radio" name="q241" value="B"> B. Không được vượt.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 242 -->
+<div class="question" data-answer="D">
+<p><b>Câu 242:</b> Theo tín hiệu đèn của xe cơ giới, xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image026.jpg" alt="Câu 242">
+<label><input type="radio" name="q242" value="A"> A. Xe mô tô.</label>
+<label><input type="radio" name="q242" value="B"> B. Xe ô tô con.</label>
+<label><input type="radio" name="q242" value="C"> C. Không xe nào vi phạm.</label>
+<label><input type="radio" name="q242" value="D"> D. Cả hai xe.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 243 -->
+<div class="question" data-answer="B">
+<p><b>Câu 243:</b> Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image027.jpg" alt="Câu 243">
+<label><input type="radio" name="q243" value="A"> A. Xe con.</label>
+<label><input type="radio" name="q243" value="B"> B. Xe tải.</label>
+<label><input type="radio" name="q243" value="C"> C. Xe con, xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 244 -->
+<div class="question" data-answer="C">
+<p><b>Câu 244:</b> Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image028.jpg" alt="Câu 244">
+<label><input type="radio" name="q244" value="A"> A. Xe tải, xe con.</label>
+<label><input type="radio" name="q244" value="B"> B. Xe khách, xe con.</label>
+<label><input type="radio" name="q244" value="C"> C. Xe khách, xe tải.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 245 -->
+<div class="question" data-answer="B">
+<p><b>Câu 245:</b> Các xe đi theo hướng mũi tên, xe nào chấp hành đúng quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image029.jpg" alt="Câu 245">
+<label><input type="radio" name="q245" value="A"> A. Xe tải, xe mô tô.</label>
+<label><input type="radio" name="q245" value="B"> B. Xe khách, xe mô tô.</label>
+<label><input type="radio" name="q245" value="C"> C. Xe tải, xe con.</label>
+<label><input type="radio" name="q245" value="D"> D. Xe mô tô, xe con.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 246 -->
+<div class="question" data-answer="C">
+<p><b>Câu 246:</b> Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?</p>
+<img src="34_cau_sa_hinh_files/image030.jpg" alt="Câu 246">
+<label><input type="radio" name="q246" value="A"> A. Xe của bạn, xe mô tô, xe con.</label>
+<label><input type="radio" name="q246" value="B"> B. Xe con, xe của bạn, xe mô tô.</label>
+<label><input type="radio" name="q246" value="C"> C. Xe mô tô, xe con, xe của bạn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 247 -->
+<div class="question" data-answer="B">
+<p><b>Câu 247:</b> Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?</p>
+<img src="34_cau_sa_hinh_files/image031.jpg" alt="Câu 247">
+<label><input type="radio" name="q247" value="A"> A. Xe của bạn, xe mô tô, xe con.</label>
+<label><input type="radio" name="q247" value="B"> B. Xe con, xe của bạn, xe mô tô.</label>
+<label><input type="radio" name="q247" value="C"> C. Xe mô tô, xe con, xe của bạn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 248 -->
+<div class="question" data-answer="C">
+<p><b>Câu 248:</b> Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?</p>
+<img src="34_cau_sa_hinh_files/image032.jpg" alt="Câu 248">
+<label><input type="radio" name="q248" value="A"> A. Xe của bạn, xe mô tô, xe đạp.</label>
+<label><input type="radio" name="q248" value="B"> B. Xe mô tô, xe đạp, xe của bạn.</label>
+<label><input type="radio" name="q248" value="C"> C. Xe đạp, xe mô tô, xe của bạn.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 249 -->
+<div class="question" data-answer="A">
+<p><b>Câu 249:</b> Xe nào dừng đúng theo quy tắc giao thông?</p>
+<img src="34_cau_sa_hinh_files/image033.jpg" alt="Câu 249">
+<label><input type="radio" name="q249" value="A"> A. Xe con.</label>
+<label><input type="radio" name="q249" value="B"> B. Xe mô tô.</label>
+<label><input type="radio" name="q249" value="C"> C. Cả 2 xe đều đúng.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- Câu 250 -->
+<div class="question" data-answer="B">
+<p><b>Câu 250:</b> Trong tình huống dưới đây, xe đầu kéo kéo rơ moóc (xe container) đang rẽ phải, xe con màu xanh và xe máy phía sau xe container đi như thế nào để bảo đảm an toàn?</p>
+<img src="34_cau_sa_hinh_files/image034.jpg" alt="Câu 250">
+<label><input type="radio" name="q250" value="A"> A. Vượt về phía bên phải để đi tiếp.</label>
+<label><input type="radio" name="q250" value="B"> B. Giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi.</label>
+<label><input type="radio" name="q250" value="C"> C. Vượt về phía bên trái để đi tiếp.</label>
+<button onclick="checkAnswer(this)">✅ Kiểm tra</button>
+<p class="result"></p>
+</div>
+
+<!-- End Danh sách câu -->
+</div>
+
+<script>
+// ========== HÀM KIỂM TRA TỪNG CÂU (tương thích với onclick="checkAnswer(this)") ==========
+function checkAnswer(btn) {
+    const questionDiv = btn.parentElement;
+    const selectedRadio = questionDiv.querySelector('input[type="radio"]:checked');
+    const resultPara = questionDiv.querySelector('.result');
+    if (!selectedRadio) {
+        resultPara.innerHTML = '<span class="wrong">⚠️ Vui lòng chọn đáp án.</span>';
+        questionDiv.setAttribute('data-status', 'unanswered');
+        questionDiv.setAttribute('data-answered', 'false');
+        return;
+    }
+    const userValue = selectedRadio.value;
+    const correctAnswer = questionDiv.getAttribute('data-answer');
+    if (userValue === correctAnswer) {
+        resultPara.innerHTML = '<span class="correct">✅ Chính xác!</span>';
+        questionDiv.setAttribute('data-status', 'correct');
+    } else {
+        resultPara.innerHTML = `<span class="wrong">❌ Sai. Đáp án đúng: ${correctAnswer}.</span>`;
+        questionDiv.setAttribute('data-status', 'wrong');
+    }
+    questionDiv.setAttribute('data-answered', 'true');
+}
+
+// ========== HÀM XÁO TRỘN ==========
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+// ========== RANDOM 50 CÂU ==========
+window.onload = function() {
+    const allQuestions = Array.from(document.querySelectorAll('#allQuestions .question'));
+    if (allQuestions.length === 0) {
+        document.getElementById('quiz').innerHTML = '<p style="color:red;">Lỗi: Không tìm thấy câu hỏi. Hãy kiểm tra lại nội dung trong #allQuestions.</p>';
+        return;
+    }
+    // Xáo trộn toàn bộ
+    const shuffled = shuffleArray([...allQuestions]);
+    // Lấy 50 câu đầu
+    const selected = shuffled.slice(0, 25);
+    
+    const quizContainer = document.getElementById('quiz');
+    quizContainer.innerHTML = '';
+    // Clone và đổi tên radio để tránh xung đột
+    selected.forEach((q, idx) => {
+        const clone = q.cloneNode(true);
+        const radios = clone.querySelectorAll('input[type="radio"]');
+        radios.forEach(radio => {
+            radio.name = `q_rand_${idx}`;
+        });
+        quizContainer.appendChild(clone);
+    });
+};
+
+// ========== CHẤM ĐIỂM TOÀN BỘ ==========
+function gradeAll() {
+    const questions = document.querySelectorAll('#quiz .question');
+    let correctCount = 0;
+    questions.forEach(q => {
+        const answer = q.getAttribute('data-answer');
+        const selected = q.querySelector('input[type="radio"]:checked');
+        const resultSpan = q.querySelector('.result');
+        if (selected) {
+            if (selected.value === answer) {
+                correctCount++;
+                resultSpan.innerHTML = '<span class="correct">✅ Chính xác!</span>';
+                q.setAttribute('data-status', 'correct');
+            } else {
+                resultSpan.innerHTML = `<span class="wrong">❌ Sai. Đáp án đúng: ${answer}.</span>`;
+                q.setAttribute('data-status', 'wrong');
+            }
+            q.setAttribute('data-answered', 'true');
+        } else {
+            resultSpan.innerHTML = '<span class="wrong">⚠️ Chưa trả lời.</span>';
+            q.setAttribute('data-status', 'unanswered');
+            q.setAttribute('data-answered', 'false');
+        }
+    });
+    document.getElementById('score').innerHTML = `🎯 Kết quả: ${correctCount} / ${questions.length} câu đúng.`;
+}
+
+// ========== HIỆN CÂU SAI ==========
+function showWrong() {
+    const questions = document.querySelectorAll('#quiz .question');
+    let hasWrong = false;
+    questions.forEach(q => {
+        const status = q.getAttribute('data-status');
+        if (status === 'wrong') {
+            q.style.display = 'block';
+            hasWrong = true;
+        } else {
+            q.style.display = 'none';
+        }
+    });
+    if (!hasWrong) {
+        alert('Chưa có câu sai nào! Hãy làm bài hoặc chấm điểm trước.');
+        showAll();
+    }
+}
+
+// ========== HIỆN TẤT CẢ CÂU ==========
+function showAll() {
+    const questions = document.querySelectorAll('#quiz .question');
+    questions.forEach(q => {
+        q.style.display = 'block';
+    });
+}
+</script>
+
+<footer>📌 GPLX (A, A1) random 25 câu | Chúc Ôn tập hiệu quả</footer>
+</body>
+</html>
